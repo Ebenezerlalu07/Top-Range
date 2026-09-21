@@ -1,0 +1,4665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Top Range Building Materials - quality construction materials, reliable supply and quotation solutions.">
+
+    <title>Top Range Building Materials</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["DM Sans", "sans-serif"],
+                        display: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+
+<body class="bg-[#F5F5F0] text-[#101411]">
+
+    <!-- Scroll progress -->
+    <div id="scrollProgress"></div>
+
+
+    <!-- =====================================================
+        NAVBAR
+    ====================================================== -->
+
+    <header id="siteHeader" class="fixed left-0 top-0 z-50
+        w-full px-4 pt-4
+        md:px-7">
+
+        <nav id="mainNavbar" class="mx-auto flex max-w-[1450px]
+            items-center justify-between
+            rounded-full
+            border border-white/15
+            bg-black/20
+            px-4 py-3
+            shadow-2xl
+            backdrop-blur-xl
+            md:px-5">
+
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-3 text-white">
+
+                <div class="flex h-11 w-11
+                    items-center justify-center
+                    rounded-full
+                    bg-[#D8FF65]
+                    text-sm font-bold
+                    text-[#101411]">
+                    TR
+                </div>
+
+                <div class="hidden sm:block">
+
+                    <p class="text-[15px] font-semibold leading-none">
+                        TOP RANGE
+                    </p>
+
+                    <p class="mt-1 text-[8px]
+                        uppercase tracking-[0.22em]
+                        text-white/55">
+                        Building Materials
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- Desktop Nav -->
+            <div class="absolute left-1/2 hidden
+                -translate-x-1/2
+                items-center gap-1
+                rounded-full
+                border border-white/10
+                bg-white/10
+                p-1
+                backdrop-blur-xl
+                lg:flex">
+
+                <a href="#home" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    About
+                </a>
+
+                <a href="#products" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Products
+                </a>
+
+                <a href="#projects" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Projects
+                </a>
+
+                <a href="#contact" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Right -->
+            <div class="flex items-center gap-2">
+
+                <a href="#quote" data-magnetic class="hidden items-center gap-2
+                    rounded-full
+                    bg-[#D8FF65]
+                    px-5 py-3
+                    text-sm font-semibold
+                    text-[#101411]
+                    transition
+                    md:flex">
+
+                    Request a Quote
+
+                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                </a>
+
+
+                <button id="menuButton" aria-label="Toggle navigation" class="flex h-11 w-11
+                    items-center justify-center
+                    rounded-full
+                    border border-white/15
+                    bg-white/10
+                    text-white
+                    lg:hidden">
+
+                    <i data-lucide="menu" class="h-5 w-5"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Mobile -->
+        <div id="mobileMenu" class="mx-auto mt-3
+            max-w-[1450px]
+            rounded-[28px]
+            border border-white/10
+            bg-[#101411]/95
+            backdrop-blur-2xl
+            lg:hidden">
+
+            <div class="flex flex-col p-5">
+
+                <a href="#home" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white">
+                    Home
+                </a>
+
+                <a href="#about" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white/70">
+                    About
+                </a>
+
+                <a href="#products" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white/70">
+                    Products
+                </a>
+
+                <a href="#projects" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white/70">
+                    Projects
+                </a>
+
+                <a href="#contact" class="mobile-link
+                    px-2 py-4 text-white/70">
+                    Contact
+                </a>
+
+                <a href="#quote" class="mobile-link mt-4
+                    flex items-center justify-between
+                    rounded-full
+                    bg-[#D8FF65]
+                    px-5 py-4
+                    text-sm font-semibold
+                    text-[#101411]">
+
+                    Request a Quote
+
+                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+        HERO
+    ====================================================== -->
+
+    <main>
+
+        <section id="home" class="relative min-h-screen overflow-hidden">
+
+            <div class="hero-bg absolute inset-0"></div>
+
+            <div class="hero-vignette absolute inset-0"></div>
+
+
+            <div class="relative z-10 mx-auto
+                flex min-h-screen
+                max-w-[1450px]
+                flex-col justify-end
+                px-5 pb-10 pt-32
+                md:px-10 md:pb-12
+                lg:px-14 lg:pb-14">
+
+                <!-- Label -->
+                <div class="hero-intro mb-5
+                    flex items-center gap-3">
+
+                    <span class="h-2 w-2
+                        rounded-full
+                        bg-[#D8FF65]
+                        shadow-[0_0_18px_#D8FF65]"></span>
+
+                    <span class="text-[11px]
+                        font-medium uppercase
+                        tracking-[0.22em]
+                        text-white/65">
+                        Building Materials · Construction Solutions
+                    </span>
+
+                </div>
+
+
+                <div class="grid items-end gap-10
+                    lg:grid-cols-[minmax(0,1fr)_360px]">
+
+                    <!-- Hero copy -->
+                    <div>
+
+                        <h1 class="hero-title
+                            font-display
+                            max-w-[1050px]
+                            text-[46px]
+                            font-medium
+                            leading-[0.94]
+                            tracking-[-0.055em]
+                            text-white
+                            sm:text-[60px]
+                            md:text-[76px]
+                            lg:text-[88px]
+                            xl:text-[100px]">
+
+                            Materials that
+
+                            <br>
+
+                            build
+
+                            <span class="relative inline-flex
+                                h-[1.05em]
+                                overflow-hidden
+                                align-bottom
+                                text-[#D8FF65]">
+
+                                <span id="wordSlider">
+
+                                    <span class="flex h-[1.05em] items-center">
+                                        better.
+                                    </span>
+
+                                    <span class="flex h-[1.05em] items-center">
+                                        stronger.
+                                    </span>
+
+                                    <span class="flex h-[1.05em] items-center">
+                                        smarter.
+                                    </span>
+
+                                    <span class="flex h-[1.05em] items-center">
+                                        greener.
+                                    </span>
+
+                                    <span class="flex h-[1.05em] items-center">
+                                        better.
+                                    </span>
+
+                                </span>
+
+                            </span>
+
+                        </h1>
+
+
+                        <p class="hero-copy mt-5
+                            max-w-2xl
+                            text-[15px]
+                            leading-7
+                            text-white/65
+                            md:text-lg">
+
+                            Your trusted source for quality building materials,
+                            construction products and reliable supply solutions
+                            for residential, commercial and industrial projects.
+
+                        </p>
+
+
+                        <div class="hero-actions mt-7
+                            flex flex-wrap gap-3">
+
+                            <a href="#products" data-magnetic class="group flex
+                                items-center gap-3
+                                rounded-full
+                                bg-[#D8FF65]
+                                px-6 py-4
+                                text-sm font-semibold
+                                text-[#101411]">
+
+                                Explore Products
+
+                                <i data-lucide="arrow-up-right" class="hover-arrow h-4 w-4"></i>
+
+                            </a>
+
+
+                            <a href="#quote" class="flex items-center
+                                rounded-full
+                                border border-white/20
+                                bg-white/10
+                                px-6 py-4
+                                text-sm font-medium
+                                text-white
+                                backdrop-blur-xl
+                                transition
+                                hover:bg-white
+                                hover:text-black">
+                                Request a Quote
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating card -->
+                    <aside data-float class="hero-card hidden lg:block">
+
+                        <div class="premium-border glass
+                            rounded-[28px]
+                            p-5 text-white">
+
+                            <div class="flex items-center justify-between">
+
+                                <span class="text-[10px]
+                                    uppercase tracking-[0.2em]
+                                    text-white/50">
+                                    Product Solutions
+                                </span>
+
+                                <div class="flex h-9 w-9
+                                    items-center justify-center
+                                    rounded-full
+                                    border border-white/20">
+
+                                    <i data-lucide="boxes" class="h-4 w-4"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <h3 class="mt-7 text-xl font-medium">
+                                Everything your project needs.
+                            </h3>
+
+                            <p class="mt-3 text-sm
+                                leading-6 text-white/55">
+                                Reliable construction materials from trusted
+                                brands for every stage of your project.
+                            </p>
+
+
+                            <div class="mt-6 grid grid-cols-2 gap-2">
+
+                                <div class="product-mini-card">
+                                    Cement
+                                </div>
+
+                                <div class="product-mini-card">
+                                    Steel
+                                </div>
+
+                                <div class="product-mini-card">
+                                    Aluminium
+                                </div>
+
+                                <div class="product-mini-card">
+                                    Paints
+                                </div>
+
+                            </div>
+
+
+                            <a href="#products" class="mt-5 flex
+                                items-center justify-between
+                                border-t border-white/10
+                                pt-5 text-sm">
+
+                                View Categories
+
+                                <span class="flex h-10 w-10
+                                    items-center justify-center
+                                    rounded-full
+                                    bg-[#D8FF65]
+                                    text-black">
+
+                                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+                <!-- =====================================================
+    HERO PRODUCT SEARCH + FILTERS
+====================================================== -->
+
+                <div class="hero-search mt-8
+    rounded-[26px]
+    bg-white
+    p-3
+    shadow-[0_20px_70px_rgba(0,0,0,0.22)]
+    md:p-4">
+
+                    <div class="grid gap-2
+        lg:grid-cols-[1.5fr_1fr_1fr_auto]
+        lg:items-center">
+
+                        <!-- =================================================
+            SEARCH INPUT
+        ================================================== -->
+
+                        <div class="hero-search-field
+            flex min-h-[72px]
+            items-center gap-4
+            rounded-[18px]
+            bg-[#F5F6F2]
+            px-5">
+
+                            <span class="hero-search-icon">
+                                <i data-lucide="search" class="h-[18px] w-[18px]"></i>
+                            </span>
+
+
+                            <div class="min-w-0 flex-1">
+
+                                <label for="productSearch" class="hero-search-label">
+                                    Search Products
+                                </label>
+
+                                <input id="productSearch" type="text" autocomplete="off"
+                                    placeholder="Cement, steel, paint..." class="mt-1 w-full
+                    border-0
+                    bg-transparent
+                    p-0
+                    text-sm
+                    font-semibold
+                    text-[#101411]
+                    outline-none
+                    placeholder:font-medium
+                    placeholder:text-black/30">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================================
+            CATEGORY CUSTOM DROPDOWN
+        ================================================== -->
+
+                        <div class="custom-select" data-dropdown data-dropdown-type="category">
+
+                            <button type="button" class="custom-select-trigger" data-dropdown-trigger
+                                aria-expanded="false">
+
+                                <span class="custom-select-left">
+
+                                    <span class="custom-select-icon">
+
+                                        <i data-lucide="layout-grid" class="h-[18px] w-[18px]"></i>
+
+                                    </span>
+
+
+                                    <span class="custom-select-copy">
+
+                                        <small>
+                                            Category
+                                        </small>
+
+                                        <strong data-dropdown-label>
+                                            All Products
+                                        </strong>
+
+                                    </span>
+
+                                </span>
+
+
+                                <span class="custom-select-arrow">
+
+                                    <i data-lucide="chevron-down" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </button>
+
+
+                            <!-- Menu -->
+
+                            <div class="custom-select-menu" data-dropdown-menu>
+
+                                <div class="custom-select-menu-head">
+
+                                    <span>
+                                        Select Category
+                                    </span>
+
+                                    <span>
+                                        Products
+                                    </span>
+
+                                </div>
+
+
+                                <!-- All -->
+                                <button type="button" class="custom-select-option active" data-value="">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="boxes"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            All Products
+                                        </strong>
+
+                                        <small>
+                                            Browse every category
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Cement -->
+                                <button type="button" class="custom-select-option" data-value="cement">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="blocks"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Cement & Concrete
+                                        </strong>
+
+                                        <small>
+                                            Cement, blocks and concrete
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Steel -->
+                                <button type="button" class="custom-select-option" data-value="steel">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="construction"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Steel & Metals
+                                        </strong>
+
+                                        <small>
+                                            Structural metal materials
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Aluminium -->
+                                <button type="button" class="custom-select-option" data-value="aluminium">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="panel-top"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Aluminium
+                                        </strong>
+
+                                        <small>
+                                            Profiles, sheets and systems
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Paint -->
+                                <button type="button" class="custom-select-option" data-value="paint">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="paintbrush"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Paints & Coatings
+                                        </strong>
+
+                                        <small>
+                                            Interior and exterior finishes
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Hardware -->
+                                <button type="button" class="custom-select-option" data-value="hardware">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="wrench"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Hardware
+                                        </strong>
+
+                                        <small>
+                                            Tools, fixings and accessories
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <input type="hidden" id="categoryFilter" value="">
+
+                        </div>
+
+
+                        <!-- =================================================
+            BRAND CUSTOM DROPDOWN
+        ================================================== -->
+
+                        <div class="custom-select" data-dropdown data-dropdown-type="brand">
+
+                            <button type="button" class="custom-select-trigger" data-dropdown-trigger
+                                aria-expanded="false">
+
+                                <span class="custom-select-left">
+
+                                    <span class="custom-select-icon">
+
+                                        <i data-lucide="badge-check" class="h-[18px] w-[18px]"></i>
+
+                                    </span>
+
+
+                                    <span class="custom-select-copy">
+
+                                        <small>
+                                            Brand
+                                        </small>
+
+                                        <strong data-dropdown-label>
+                                            All Brands
+                                        </strong>
+
+                                    </span>
+
+                                </span>
+
+
+                                <span class="custom-select-arrow">
+
+                                    <i data-lucide="chevron-down" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </button>
+
+
+                            <!-- Menu -->
+
+                            <div class="custom-select-menu" data-dropdown-menu>
+
+                                <div class="custom-select-menu-head">
+
+                                    <span>
+                                        Select Brand
+                                    </span>
+
+                                    <span>
+                                        Partners
+                                    </span>
+
+                                </div>
+
+
+                                <!-- All -->
+                                <button type="button" class="custom-select-option active" data-value="">
+
+                                    <span class="option-icon">
+
+                                        <i data-lucide="badge-check"></i>
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            All Brands
+                                        </strong>
+
+                                        <small>
+                                            Browse every manufacturer
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Asian Paints -->
+                                <button type="button" class="custom-select-option" data-value="asian-paints">
+
+                                    <span class="option-brand-logo">
+
+                                        <img src="Assets/asian-paints-logo-free-png.png" alt="Asian Paints">
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Asian Paints
+                                        </strong>
+
+                                        <small>
+                                            Paints & coatings
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Brand 2 -->
+                                <button type="button" class="custom-select-option" data-value="brand-2">
+
+                                    <span class="option-brand-logo">
+
+                                        <img src="Assets/brand-2.png" alt="Brand 2">
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Brand 02
+                                        </strong>
+
+                                        <small>
+                                            Building materials
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Brand 3 -->
+                                <button type="button" class="custom-select-option" data-value="brand-3">
+
+                                    <span class="option-brand-logo">
+
+                                        <img src="Assets/brand-3.png" alt="Brand 3">
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Brand 03
+                                        </strong>
+
+                                        <small>
+                                            Construction products
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+
+                                <!-- Brand 4 -->
+                                <button type="button" class="custom-select-option" data-value="brand-4">
+
+                                    <span class="option-brand-logo">
+
+                                        <img src="Assets/brand-4.png" alt="Brand 4">
+
+                                    </span>
+
+
+                                    <span class="option-copy">
+
+                                        <strong>
+                                            Brand 04
+                                        </strong>
+
+                                        <small>
+                                            Professional materials
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="option-check-wrap">
+
+                                        <i data-lucide="check" class="option-check"></i>
+
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <input type="hidden" id="brandFilter" value="">
+
+                        </div>
+
+
+                        <!-- =================================================
+            SEARCH BUTTON
+        ================================================== -->
+
+                        <button id="heroSearchButton" type="button" class="hero-search-button group">
+
+                            <span>
+                                Search
+                            </span>
+
+
+                            <span class="hero-search-button-icon">
+
+                                <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- =====================================================
+        QUICK CATEGORY FILTERS
+    ====================================================== -->
+
+                    <div class="hero-quick-filters
+        mt-3 flex items-center
+        gap-2 overflow-x-auto
+        px-1 pb-1">
+
+                        <span class="quick-filter-title">
+                            Popular
+                        </span>
+
+
+                        <button type="button" class="quick-filter active" data-quick-filter="">
+                            All
+                        </button>
+
+
+                        <button type="button" class="quick-filter" data-quick-filter="cement">
+                            Cement
+                        </button>
+
+
+                        <button type="button" class="quick-filter" data-quick-filter="steel">
+                            Steel
+                        </button>
+
+
+                        <button type="button" class="quick-filter" data-quick-filter="aluminium">
+                            Aluminium
+                        </button>
+
+
+                        <button type="button" class="quick-filter" data-quick-filter="paint">
+                            Paints
+                        </button>
+
+
+                        <button type="button" class="quick-filter" data-quick-filter="hardware">
+                            Hardware
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- =====================================================
+    HERO STATS
+====================================================== -->
+
+                <div class="hero-stats mt-6
+    flex flex-wrap
+    gap-x-10 gap-y-4
+    text-white">
+
+                    <div>
+
+                        <p class="text-xl font-semibold">
+                            500+
+                        </p>
+
+                        <p class="mt-1
+            text-xs text-white/40">
+                            Building Products
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-xl font-semibold">
+                            30+
+                        </p>
+
+                        <p class="mt-1
+            text-xs text-white/40">
+                            Trusted Brands
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-xl font-semibold">
+                            250+
+                        </p>
+
+                        <p class="mt-1
+            text-xs text-white/40">
+                            Projects Supplied
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+        </section>
+
+        <script>/* =========================================================
+HERO SEARCH + CUSTOM DROPDOWN
+SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
+========================================================= */
+
+            (() => {
+
+                /* =====================================================
+                   ELEMENTS
+                ====================================================== */
+
+                const heroDropdowns =
+                    document.querySelectorAll("[data-dropdown]");
+
+                const heroQuickFilters =
+                    document.querySelectorAll("[data-quick-filter]");
+
+                const heroCategoryInput =
+                    document.getElementById("categoryFilter");
+
+                const heroBrandInput =
+                    document.getElementById("brandFilter");
+
+                const heroProductSearch =
+                    document.getElementById("productSearch");
+
+                const heroSearchBtn =
+                    document.getElementById("heroSearchButton");
+
+
+                /* =====================================================
+                   CLOSE DROPDOWNS
+                ====================================================== */
+
+                function closeHeroDropdowns(except = null) {
+
+                    heroDropdowns.forEach(dropdown => {
+
+                        if (dropdown === except) {
+                            return;
+                        }
+
+                        dropdown.classList.remove("open");
+
+                        const trigger =
+                            dropdown.querySelector(
+                                "[data-dropdown-trigger]"
+                            );
+
+                        if (trigger) {
+                            trigger.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+                        }
+
+                    });
+
+                }
+
+
+                /* =====================================================
+                   QUICK FILTER ACTIVE STATE
+                ====================================================== */
+
+                function updateHeroQuickFilter(value) {
+
+                    heroQuickFilters.forEach(button => {
+
+                        const buttonValue =
+                            button.getAttribute(
+                                "data-quick-filter"
+                            ) || "";
+
+                        button.classList.toggle(
+                            "active",
+                            buttonValue === value
+                        );
+
+                    });
+
+                }
+
+
+                /* =====================================================
+                   CATEGORY DROPDOWN UI
+                ====================================================== */
+
+                function updateCategoryDropdown(value) {
+
+                    const categoryDropdown =
+                        document.querySelector(
+                            '[data-dropdown-type="category"]'
+                        );
+
+                    if (!categoryDropdown) {
+                        return;
+                    }
+
+
+                    const categoryLabel =
+                        categoryDropdown.querySelector(
+                            "[data-dropdown-label]"
+                        );
+
+                    const options =
+                        categoryDropdown.querySelectorAll(
+                            ".custom-select-option"
+                        );
+
+
+                    options.forEach(option => {
+
+                        const optionValue =
+                            option.getAttribute(
+                                "data-value"
+                            ) || "";
+
+                        const isActive =
+                            optionValue === value;
+
+                        option.classList.toggle(
+                            "active",
+                            isActive
+                        );
+
+
+                        if (isActive && categoryLabel) {
+
+                            const title =
+                                option.querySelector(
+                                    ".option-copy strong"
+                                );
+
+                            if (title) {
+
+                                categoryLabel.textContent =
+                                    title.textContent.trim();
+
+                            }
+
+                        }
+
+                    });
+
+                }
+
+
+                /* =====================================================
+                   INITIALIZE DROPDOWNS
+                ====================================================== */
+
+                heroDropdowns.forEach(dropdown => {
+
+                    const trigger =
+                        dropdown.querySelector(
+                            "[data-dropdown-trigger]"
+                        );
+
+                    const label =
+                        dropdown.querySelector(
+                            "[data-dropdown-label]"
+                        );
+
+                    const hiddenInput =
+                        dropdown.querySelector(
+                            'input[type="hidden"]'
+                        );
+
+                    const options =
+                        dropdown.querySelectorAll(
+                            ".custom-select-option"
+                        );
+
+
+                    /* Make sure trigger exists */
+
+                    if (!trigger) {
+                        return;
+                    }
+
+
+                    /* -----------------------------------------
+                       OPEN / CLOSE
+                    ------------------------------------------ */
+
+                    trigger.addEventListener(
+                        "click",
+                        event => {
+
+                            event.preventDefault();
+                            event.stopPropagation();
+
+
+                            const currentlyOpen =
+                                dropdown.classList.contains(
+                                    "open"
+                                );
+
+
+                            closeHeroDropdowns(
+                                dropdown
+                            );
+
+
+                            if (currentlyOpen) {
+
+                                dropdown.classList.remove(
+                                    "open"
+                                );
+
+                                trigger.setAttribute(
+                                    "aria-expanded",
+                                    "false"
+                                );
+
+                            } else {
+
+                                dropdown.classList.add(
+                                    "open"
+                                );
+
+                                trigger.setAttribute(
+                                    "aria-expanded",
+                                    "true"
+                                );
+
+                            }
+
+                        }
+                    );
+
+
+                    /* -----------------------------------------
+                       OPTION CLICK
+                    ------------------------------------------ */
+
+                    options.forEach(option => {
+
+                        option.addEventListener(
+                            "click",
+                            event => {
+
+                                event.preventDefault();
+                                event.stopPropagation();
+
+
+                                const value =
+                                    option.getAttribute(
+                                        "data-value"
+                                    ) || "";
+
+
+                                /* remove old active */
+
+                                options.forEach(item => {
+
+                                    item.classList.remove(
+                                        "active"
+                                    );
+
+                                });
+
+
+                                /* set active */
+
+                                option.classList.add(
+                                    "active"
+                                );
+
+
+                                /* Get option title */
+
+                                const title =
+                                    option.querySelector(
+                                        ".option-copy strong"
+                                    );
+
+
+                                if (title && label) {
+
+                                    label.textContent =
+                                        title.textContent.trim();
+
+                                }
+
+
+                                /* Update hidden input */
+
+                                if (hiddenInput) {
+
+                                    hiddenInput.value =
+                                        value;
+
+                                }
+
+
+                                /* Category quick filters */
+
+                                if (
+                                    dropdown.getAttribute(
+                                        "data-dropdown-type"
+                                    ) === "category"
+                                ) {
+
+                                    updateHeroQuickFilter(
+                                        value
+                                    );
+
+                                }
+
+
+                                /* close */
+
+                                dropdown.classList.remove(
+                                    "open"
+                                );
+
+                                trigger.setAttribute(
+                                    "aria-expanded",
+                                    "false"
+                                );
+
+                            }
+                        );
+
+                    });
+
+                });
+
+
+                /* =====================================================
+                   QUICK FILTER BUTTONS
+                ====================================================== */
+
+                heroQuickFilters.forEach(button => {
+
+                    button.addEventListener(
+                        "click",
+                        event => {
+
+                            event.preventDefault();
+
+
+                            const value =
+                                button.getAttribute(
+                                    "data-quick-filter"
+                                ) || "";
+
+
+                            /* Update button */
+
+                            updateHeroQuickFilter(
+                                value
+                            );
+
+
+                            /* Update hidden input */
+
+                            if (heroCategoryInput) {
+
+                                heroCategoryInput.value =
+                                    value;
+
+                            }
+
+
+                            /* Update custom category dropdown */
+
+                            updateCategoryDropdown(
+                                value
+                            );
+
+                        }
+                    );
+
+                });
+
+
+                /* =====================================================
+                   CLICK OUTSIDE
+                ====================================================== */
+
+                document.addEventListener(
+                    "click",
+                    event => {
+
+                        const clickedDropdown =
+                            event.target.closest(
+                                "[data-dropdown]"
+                            );
+
+
+                        if (!clickedDropdown) {
+
+                            closeHeroDropdowns();
+
+                        }
+
+                    }
+                );
+
+
+                /* =====================================================
+                   ESCAPE KEY
+                ====================================================== */
+
+                document.addEventListener(
+                    "keydown",
+                    event => {
+
+                        if (event.key === "Escape") {
+
+                            closeHeroDropdowns();
+
+                        }
+
+                    }
+                );
+
+
+                /* =====================================================
+                   SEARCH FUNCTION
+                ====================================================== */
+
+                function runHeroProductSearch() {
+
+                    const searchValue =
+                        heroProductSearch
+                            ? heroProductSearch.value.trim()
+                            : "";
+
+                    const categoryValue =
+                        heroCategoryInput
+                            ? heroCategoryInput.value
+                            : "";
+
+                    const brandValue =
+                        heroBrandInput
+                            ? heroBrandInput.value
+                            : "";
+
+
+                    console.log(
+                        "Product Search:",
+                        {
+                            search: searchValue,
+                            category: categoryValue,
+                            brand: brandValue
+                        }
+                    );
+
+
+                    /* =============================================
+                       OPTION 1:
+                       REDIRECT TO PRODUCTS PAGE
+            
+                       Uncomment when products.html is ready.
+                    ============================================== */
+
+                    /*
+                    const params =
+                        new URLSearchParams();
+            
+            
+                    if (searchValue) {
+            
+                        params.set(
+                            "search",
+                            searchValue
+                        );
+            
+                    }
+            
+            
+                    if (categoryValue) {
+            
+                        params.set(
+                            "category",
+                            categoryValue
+                        );
+            
+                    }
+            
+            
+                    if (brandValue) {
+            
+                        params.set(
+                            "brand",
+                            brandValue
+                        );
+            
+                    }
+            
+            
+                    window.location.href =
+                        "products.html?" +
+                        params.toString();
+                    */
+
+                }
+
+
+                /* =====================================================
+                   SEARCH BUTTON
+                ====================================================== */
+
+                if (heroSearchBtn) {
+
+                    heroSearchBtn.addEventListener(
+                        "click",
+                        runHeroProductSearch
+                    );
+
+                }
+
+
+                /* =====================================================
+                   ENTER KEY SEARCH
+                ====================================================== */
+
+                if (heroProductSearch) {
+
+                    heroProductSearch.addEventListener(
+                        "keydown",
+                        event => {
+
+                            if (event.key === "Enter") {
+
+                                event.preventDefault();
+
+                                runHeroProductSearch();
+
+                            }
+
+                        }
+                    );
+
+                }
+
+
+                /* =====================================================
+                   LUCIDE
+                ====================================================== */
+
+                if (
+                    typeof lucide !== "undefined"
+                ) {
+
+                    lucide.createIcons();
+
+                }
+
+            })();</script>
+
+
+        <!-- =================================================
+            MARQUEE
+        ================================================== -->
+
+        <section class="overflow-hidden
+            border-y border-black/5
+            bg-[#D8FF65]
+            py-4">
+
+            <div class="marquee">
+
+                <div class="marquee-track">
+
+                    <div class="marquee-item">CEMENT</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">STEEL</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">ALUMINIUM</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">PAINTS</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">HARDWARE</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">BUILD BETTER</div>
+                    <div class="marquee-dot"></div>
+
+
+                    <!-- duplicate -->
+
+                    <div class="marquee-item">CEMENT</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">STEEL</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">ALUMINIUM</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">PAINTS</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">HARDWARE</div>
+                    <div class="marquee-dot"></div>
+
+                    <div class="marquee-item">BUILD BETTER</div>
+                    <div class="marquee-dot"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            PRODUCTS
+        ================================================== -->
+
+        <section id="products" class="bg-[#F5F5F0]
+            py-20 md:py-24 lg:py-28">
+
+            <div class="mx-auto max-w-[1450px]
+                px-5 md:px-10 lg:px-14">
+
+                <div class="mb-10 grid gap-6
+                    md:mb-12
+                    lg:grid-cols-2
+                    lg:items-end">
+
+                    <div data-reveal>
+
+                        <div class="mb-4 flex items-center gap-3">
+
+                            <span class="h-[2px] w-8
+                                bg-[#96C11F]"></span>
+
+                            <span class="text-[11px]
+                                font-semibold uppercase
+                                tracking-[0.22em]
+                                text-black/40">
+                                Product Categories
+                            </span>
+
+                        </div>
+
+
+                        <h2 class="max-w-2xl
+                            text-[40px]
+                            font-medium
+                            leading-[1.03]
+                            tracking-[-0.045em]
+                            md:text-[54px]
+                            lg:text-[62px]">
+
+                            Everything needed
+
+                            <span class="text-black/30">
+                                to build better.
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <div data-reveal class="lg:flex lg:justify-end">
+
+                        <p class="max-w-lg
+                            text-base leading-7
+                            text-black/50">
+                            Explore construction materials selected for
+                            performance, reliability and long-term project value.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product Grid -->
+                <div data-stagger class="grid grid-cols-1 gap-4
+                    md:grid-cols-2
+                    lg:grid-cols-3">
+
+                    <!-- 01 -->
+                    <a href="#" data-tilt class="group relative
+                        min-h-[420px]
+                        overflow-hidden
+                        rounded-[28px]
+                        bg-[#111]">
+
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=82"
+                            alt="Cement" class="category-image
+                            absolute inset-0
+                            h-full w-full object-cover">
+
+                        <div class="absolute inset-0
+                            bg-gradient-to-t
+                            from-black/90
+                            via-black/20
+                            to-transparent"></div>
+
+                        <div class="absolute inset-x-0 bottom-0 p-7">
+
+                            <div class="mb-5 flex
+                                items-center justify-between">
+
+                                <span class="text-xs text-white/45">
+                                    01
+                                </span>
+
+                                <span class="circle-arrow">
+
+                                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+
+                            <h3 class="text-2xl
+                                font-semibold text-white
+                                md:text-3xl">
+                                Cement & Concrete
+                            </h3>
+
+                            <p class="mt-3 max-w-sm
+                                text-sm leading-6
+                                text-white/55">
+                                High-performance cement and concrete
+                                solutions for modern construction.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 02 -->
+                    <a href="#" data-tilt class="group relative
+                        min-h-[420px]
+                        overflow-hidden
+                        rounded-[28px]
+                        bg-[#111]">
+
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=82"
+                            alt="Steel" class="category-image
+                            absolute inset-0
+                            h-full w-full object-cover">
+
+                        <div class="absolute inset-0
+                            bg-gradient-to-t
+                            from-black/90
+                            via-black/20
+                            to-transparent"></div>
+
+                        <div class="absolute inset-x-0 bottom-0 p-7">
+
+                            <div class="mb-5 flex
+                                items-center justify-between">
+
+                                <span class="text-xs text-white/45">
+                                    02
+                                </span>
+
+                                <span class="circle-arrow">
+
+                                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+                            <h3 class="text-2xl
+                                font-semibold text-white
+                                md:text-3xl">
+                                Steel & Metals
+                            </h3>
+
+                            <p class="mt-3 max-w-sm
+                                text-sm leading-6
+                                text-white/55">
+                                Structural steel and metal solutions
+                                for demanding construction projects.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 03 -->
+                    <a href="#" data-tilt class="group relative
+                        min-h-[420px]
+                        overflow-hidden
+                        rounded-[28px]
+                        bg-[#111]">
+
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=82"
+                            alt="Paints" class="category-image
+                            absolute inset-0
+                            h-full w-full object-cover">
+
+                        <div class="absolute inset-0
+                            bg-gradient-to-t
+                            from-black/90
+                            via-black/20
+                            to-transparent"></div>
+
+                        <div class="absolute inset-x-0 bottom-0 p-7">
+
+                            <div class="mb-5 flex
+                                items-center justify-between">
+
+                                <span class="text-xs text-white/45">
+                                    03
+                                </span>
+
+                                <span class="circle-arrow">
+
+                                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+                            <h3 class="text-2xl
+                                font-semibold text-white
+                                md:text-3xl">
+                                Paints & Coatings
+                            </h3>
+
+                            <p class="mt-3 max-w-sm
+                                text-sm leading-6
+                                text-white/55">
+                                Protective and decorative finishes
+                                for every surface.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            ABOUT
+        ================================================== -->
+
+        <section id="about" class="overflow-hidden
+            bg-white
+            py-20 md:py-24 lg:py-28">
+
+            <div class="mx-auto max-w-[1450px]
+                px-5 md:px-10 lg:px-14">
+
+                <div class="grid gap-10
+                    lg:grid-cols-2
+                    lg:items-center
+                    lg:gap-16">
+
+                    <!-- Image -->
+                    <div data-image-reveal class="relative
+                        overflow-hidden
+                        rounded-[32px]">
+
+                        <div class="h-[480px]
+                            overflow-hidden
+                            md:h-[650px]">
+
+                            <img loading="lazy" data-parallax
+                                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"
+                                alt="Construction project" class="h-[115%] w-full object-cover">
+
+                        </div>
+
+
+                        <div data-float class="absolute bottom-6 left-6
+                            rounded-[24px]
+                            border border-white/20
+                            bg-black/25
+                            p-5 text-white
+                            backdrop-blur-xl">
+
+                            <p class="text-4xl font-semibold">
+                                15+
+                            </p>
+
+                            <p class="mt-1 text-xs text-white/60">
+                                Years of trusted supply
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Copy -->
+                    <div data-reveal-right>
+
+                        <p class="eyebrow">
+                            About Top Range
+                        </p>
+
+                        <h2 class="mt-5 max-w-xl
+                            text-[40px]
+                            font-medium
+                            leading-[1.05]
+                            tracking-[-0.045em]
+                            md:text-[54px]
+                            lg:text-[60px]">
+
+                            Building trust into
+
+                            <span class="text-black/30">
+                                every project.
+                            </span>
+
+                        </h2>
+
+
+                        <p class="mt-6 max-w-xl
+                            text-base leading-8
+                            text-black/50">
+                            Top Range Building Materials delivers reliable
+                            construction products for contractors, developers,
+                            consultants and businesses across residential,
+                            commercial and industrial projects.
+                        </p>
+
+
+                        <div class="mt-9 grid gap-5
+                            sm:grid-cols-2">
+
+                            <div class="about-feature">
+
+                                <i data-lucide="badge-check" class="h-5 w-5 text-[#88AE1D]"></i>
+
+                                <h4 class="mt-4 font-semibold">
+                                    Trusted Products
+                                </h4>
+
+                                <p class="mt-2 text-sm
+                                    leading-6 text-black/45">
+                                    Carefully selected materials
+                                    from established manufacturers.
+                                </p>
+
+                            </div>
+
+
+                            <div class="about-feature">
+
+                                <i data-lucide="truck" class="h-5 w-5 text-[#88AE1D]"></i>
+
+                                <h4 class="mt-4 font-semibold">
+                                    Reliable Supply
+                                </h4>
+
+                                <p class="mt-2 text-sm
+                                    leading-6 text-black/45">
+                                    Efficient procurement and
+                                    dependable project delivery.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="#buildStory" data-magnetic class="mt-9 inline-flex
+                            items-center gap-3
+                            rounded-full
+                            bg-[#101411]
+                            px-6 py-4
+                            text-sm font-medium
+                            text-white">
+
+                            Discover Our Story
+
+                            <i data-lucide="arrow-down" class="h-4 w-4"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            STICKY STORY
+        ================================================== -->
+
+        <section id="buildStory" class="relative bg-[#0E1512] text-white">
+
+            <div class="mx-auto grid
+                max-w-[1450px]
+                gap-12
+                px-5 py-20
+                md:px-10 md:py-24
+                lg:grid-cols-2
+                lg:gap-16
+                lg:px-14 lg:py-28">
+
+                <!-- Sticky image -->
+                <div class="lg:sticky
+                    lg:top-24
+                    lg:h-[calc(100vh-120px)]">
+
+                    <div class="relative h-[520px]
+                        overflow-hidden
+                        rounded-[32px]
+                        lg:h-full">
+
+                        <img loading="lazy" data-story-image="0"
+                            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"
+                            alt="Foundation" class="story-image">
+
+                        <img loading="lazy" data-story-image="1"
+                            src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1400&q=85"
+                            alt="Structure" class="story-image">
+
+                        <img loading="lazy" data-story-image="2"
+                            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=85"
+                            alt="Finishing" class="story-image">
+
+
+                        <div class="absolute inset-0
+                            bg-gradient-to-t
+                            from-black/70
+                            via-transparent
+                            to-black/10"></div>
+
+
+                        <div class="absolute left-6 top-6
+                            flex h-14 w-14
+                            items-center justify-center
+                            rounded-full
+                            border border-white/20
+                            bg-black/20
+                            text-sm
+                            backdrop-blur-xl">
+
+                            <span id="storyNumber">
+                                01
+                            </span>
+
+                        </div>
+
+
+                        <div class="absolute bottom-0 left-0 p-8">
+
+                            <p class="eyebrow text-white/40">
+                                Building Process
+                            </p>
+
+                            <p id="storyLabel" class="mt-2 text-2xl font-medium">
+                                Foundation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Scroll copy -->
+                <div class="lg:pt-[8vh]">
+
+                    <div class="mb-20 lg:mb-24">
+
+                        <p data-reveal class="eyebrow text-white/40">
+                            From Ground to Finish
+                        </p>
+
+                        <h2 class="mt-5 max-w-xl
+                            text-[42px]
+                            font-medium
+                            leading-[1.03]
+                            tracking-[-0.05em]
+                            md:text-[58px]
+                            lg:text-[64px]">
+
+                            Materials for
+                            every stage of
+
+                            <span class="text-[#D8FF65]">
+                                construction.
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <!-- step -->
+                    <article data-story="0" data-label="Foundation" class="story-step active">
+
+                        <div>
+
+                            <span class="story-number">
+                                01 · Foundation
+                            </span>
+
+                            <h3 class="story-heading">
+                                Start with strength.
+                            </h3>
+
+                            <p class="story-copy">
+                                Reliable cement and concrete products
+                                designed to support strong foundations,
+                                structural stability and long-term performance.
+                            </p>
+
+                            <div class="story-tags">
+
+                                <span>Cement</span>
+                                <span>Concrete</span>
+                                <span>Blocks</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article data-story="1" data-label="Structure" class="story-step">
+
+                        <div>
+
+                            <span class="story-number">
+                                02 · Structure
+                            </span>
+
+                            <h3 class="story-heading">
+                                Build with precision.
+                            </h3>
+
+                            <p class="story-copy">
+                                Structural steel, aluminium and metal
+                                products engineered for demanding
+                                construction requirements.
+                            </p>
+
+                            <div class="story-tags">
+
+                                <span>Steel</span>
+                                <span>Aluminium</span>
+                                <span>Profiles</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article data-story="2" data-label="Finishing" class="story-step">
+
+                        <div>
+
+                            <span class="story-number">
+                                03 · Finishing
+                            </span>
+
+                            <h3 class="story-heading">
+                                Finish with confidence.
+                            </h3>
+
+                            <p class="story-copy">
+                                Complete each project with coatings,
+                                paints, hardware and finishing materials
+                                designed for lasting quality.
+                            </p>
+
+                            <div class="story-tags">
+
+                                <span>Paint</span>
+                                <span>Coatings</span>
+                                <span>Hardware</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            HORIZONTAL PRODUCT EXPERIENCE
+        ================================================== -->
+
+        <section id="materialShowcase" class="horizontal-section
+            bg-[#F5F5F0]
+            py-20 md:py-24 lg:py-28">
+
+            <div class="mx-auto max-w-[1450px]
+                px-5 md:px-10 lg:px-14">
+
+                <div class="mb-12 grid gap-8
+                    lg:grid-cols-2
+                    lg:items-end">
+
+                    <div>
+
+                        <p data-reveal class="eyebrow">
+                            Explore Materials
+                        </p>
+
+                        <h2 class="mt-4 max-w-3xl
+                            text-[42px]
+                            font-medium
+                            leading-[1.03]
+                            tracking-[-0.05em]
+                            md:text-[58px]
+                            lg:text-[68px]">
+
+                            <span class="reveal-line">
+                                <span class="reveal-line-inner">
+                                    Built for today.
+                                </span>
+                            </span>
+
+                            <span class="reveal-line text-black/30">
+                                <span class="reveal-line-inner">
+                                    Ready for tomorrow.
+                                </span>
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <div data-reveal class="lg:flex lg:justify-end">
+
+                        <p class="max-w-md
+                            text-base leading-7
+                            text-black/45">
+                            Browse material solutions across foundation,
+                            structural and finishing applications.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="horizontal-track
+                px-5 md:px-10 lg:px-14">
+
+                <!-- horizontal card -->
+                <article class="horizontal-card horizontal-image-card">
+
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"
+                        alt="Concrete">
+
+                    <div class="horizontal-overlay"></div>
+
+                    <div class="horizontal-copy">
+
+                        <span>01 · Foundation</span>
+
+                        <h3>Cement & Concrete</h3>
+
+                        <p>
+                            Dependable solutions for foundations
+                            and structural applications.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="horizontal-card horizontal-image-card">
+
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1400&q=85"
+                        alt="Steel">
+
+                    <div class="horizontal-overlay"></div>
+
+                    <div class="horizontal-copy">
+
+                        <span>02 · Structure</span>
+
+                        <h3>Steel & Metals</h3>
+
+                        <p>
+                            Strength, precision and durability for
+                            structural construction.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="horizontal-card horizontal-image-card">
+
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=85"
+                        alt="Finishes">
+
+                    <div class="horizontal-overlay"></div>
+
+                    <div class="horizontal-copy">
+
+                        <span>03 · Finish</span>
+
+                        <h3>Paints & Coatings</h3>
+
+                        <p>
+                            Finishing solutions developed for
+                            protection and lasting appearance.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CTA Card -->
+                <article class="horizontal-card
+                    flex min-h-[520px]
+                    flex-col justify-between
+                    rounded-[32px]
+                    bg-[#D8FF65]
+                    p-8
+                    md:min-h-[600px]
+                    md:p-10">
+
+                    <div class="flex justify-between">
+
+                        <span class="eyebrow">
+                            Full Catalogue
+                        </span>
+
+                        <span class="text-sm">
+                            500+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 class="max-w-xl
+                            text-4xl font-medium
+                            leading-[1]
+                            tracking-[-0.04em]
+                            md:text-6xl">
+                            Find what your project needs.
+                        </h3>
+
+                        <a href="#products" data-magnetic class="mt-8 inline-flex
+                            items-center gap-3
+                            rounded-full
+                            bg-black
+                            px-6 py-4
+                            text-sm font-medium
+                            text-white">
+
+                            Browse Catalogue
+
+                            <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            WHY US
+        ================================================== -->
+
+        <section class="relative overflow-hidden
+            bg-[#101713]
+            py-20 text-white
+            md:py-24 lg:py-28">
+
+            <div class="ambient-glow"></div>
+
+            <div class="relative mx-auto
+                max-w-[1450px]
+                px-5 md:px-10 lg:px-14">
+
+                <div class="grid gap-12
+                    lg:grid-cols-[0.9fr_1.1fr]
+                    lg:gap-16">
+
+                    <div data-reveal>
+
+                        <p class="eyebrow text-white/40">
+                            Why Top Range
+                        </p>
+
+                        <h2 class="mt-5 max-w-xl
+                            text-[40px]
+                            font-medium
+                            leading-[1.05]
+                            tracking-[-0.045em]
+                            md:text-[56px]
+                            lg:text-[62px]">
+                            Supply that keeps
+                            projects moving.
+                        </h2>
+
+                    </div>
+
+
+                    <div data-stagger class="feature-grid">
+
+                        <div class="feature-card">
+
+                            <i data-lucide="package-check" class="h-6 w-6 text-[#D8FF65]"></i>
+
+                            <h3>Quality Assured</h3>
+
+                            <p>
+                                Selected products suited to demanding
+                                construction requirements.
+                            </p>
+
+                        </div>
+
+
+                        <div class="feature-card">
+
+                            <i data-lucide="truck" class="h-6 w-6 text-[#D8FF65]"></i>
+
+                            <h3>Reliable Delivery</h3>
+
+                            <p>
+                                Efficient supply coordination aligned
+                                with your project schedule.
+                            </p>
+
+                        </div>
+
+
+                        <div class="feature-card">
+
+                            <i data-lucide="headphones" class="h-6 w-6 text-[#D8FF65]"></i>
+
+                            <h3>Expert Support</h3>
+
+                            <p>
+                                Professional assistance from product
+                                enquiry through delivery.
+                            </p>
+
+                        </div>
+
+
+                        <div class="feature-card">
+
+                            <i data-lucide="badge-dollar-sign" class="h-6 w-6 text-[#D8FF65]"></i>
+
+                            <h3>Competitive Value</h3>
+
+                            <p>
+                                Practical sourcing solutions designed
+                                around project budgets.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Counters -->
+                <div class="mt-16 grid gap-8
+                    border-t border-white/10
+                    pt-10
+                    sm:grid-cols-2
+                    lg:grid-cols-4">
+
+                    <div class="counter-block">
+
+                        <p>
+                            <span data-counter="500">0</span>+
+                        </p>
+
+                        <span>Building Products</span>
+
+                    </div>
+
+                    <div class="counter-block">
+
+                        <p>
+                            <span data-counter="30">0</span>+
+                        </p>
+
+                        <span>Trusted Brands</span>
+
+                    </div>
+
+                    <div class="counter-block">
+
+                        <p>
+                            <span data-counter="250">0</span>+
+                        </p>
+
+                        <span>Projects Supplied</span>
+
+                    </div>
+
+                    <div class="counter-block">
+
+                        <p>
+                            <span data-counter="15">0</span>+
+                        </p>
+
+                        <span>Years Experience</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            PROJECTS
+        ================================================== -->
+
+        <section id="projects" class="bg-white
+            py-20 md:py-24 lg:py-28">
+
+            <div class="mx-auto max-w-[1450px]
+                px-5 md:px-10 lg:px-14">
+
+                <div data-reveal class="mb-12">
+
+                    <p class="eyebrow">
+                        Applications
+                    </p>
+
+                    <h2 class="mt-4 max-w-3xl
+                        text-[42px]
+                        font-medium
+                        leading-[1.05]
+                        tracking-[-0.045em]
+                        md:text-[58px]
+                        lg:text-[64px]">
+                        Materials made for
+                        real-world projects.
+                    </h2>
+
+                </div>
+
+
+                <div data-stagger class="grid gap-4
+                    lg:grid-cols-12">
+
+                    <article class="project-card group
+                        min-h-[520px]
+                        lg:col-span-7">
+
+                        <img loading="lazy" data-parallax
+                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85"
+                            alt="Commercial high rise">
+
+                        <div class="project-overlay"></div>
+
+                        <div class="project-copy">
+
+                            <span>Commercial</span>
+
+                            <h3>
+                                High-Rise Developments
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                    <div class="grid gap-4
+                        lg:col-span-5">
+
+                        <article class="project-card group min-h-[250px]">
+
+                            <img loading="lazy" data-parallax
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
+                                alt="Villa">
+
+                            <div class="project-overlay"></div>
+
+                            <div class="project-copy">
+
+                                <span>Residential</span>
+
+                                <h3>
+                                    Villa Construction
+                                </h3>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-card group min-h-[250px]">
+
+                            <img loading="lazy" data-parallax
+                                src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85"
+                                alt="Industrial">
+
+                            <div class="project-overlay"></div>
+
+                            <div class="project-copy">
+
+                                <span>Industrial</span>
+
+                                <h3>
+                                    Industrial Facilities
+                                </h3>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            QUOTE PROCESS
+        ================================================== -->
+
+        <!-- =====================================================
+    REQUEST A QUOTE SECTION
+====================================================== -->
+
+        <section id="quote" class="bg-[#F5F5F0]
+    py-20
+    md:py-24
+    lg:py-28">
+
+            <div class="mx-auto
+        max-w-[1450px]
+        px-5
+        md:px-10
+        lg:px-14">
+
+                <div class="grid gap-12
+            lg:grid-cols-[0.8fr_1.2fr]
+            lg:items-start
+            lg:gap-20">
+
+                    <!-- =============================================
+                LEFT CONTENT
+            ============================================== -->
+
+                    <div data-reveal class="lg:sticky lg:top-32">
+
+                        <div class="flex items-center gap-3">
+
+                            <span class="h-[2px] w-8
+                        bg-[#91B927]"></span>
+
+                            <p class="text-[11px]
+                        font-semibold uppercase
+                        tracking-[0.22em]
+                        text-black/35">
+                                Request a Quote
+                            </p>
+
+                        </div>
+
+
+                        <h2 class="mt-5
+                    max-w-xl
+                    text-[42px]
+                    font-medium
+                    leading-[1.03]
+                    tracking-[-0.05em]
+                    md:text-[56px]
+                    lg:text-[64px]">
+
+                            From enquiry
+                            <br>
+                            to quotation.
+
+                            <span class="text-black/25">
+                                Simple.
+                            </span>
+
+                        </h2>
+
+
+                        <p class="mt-6
+                    max-w-md
+                    text-base
+                    leading-8
+                    text-black/45">
+                            Select your required materials, provide the
+                            quantities and project details, and our team
+                            will prepare a tailored quotation.
+                        </p>
+
+
+                        <!-- small info -->
+                        <div class="mt-10
+                    flex items-center gap-4
+                    border-t border-black/10
+                    pt-6">
+
+                            <div class="flex h-12 w-12
+                        items-center justify-center
+                        rounded-full
+                        bg-[#D8FF65]">
+
+                                <i data-lucide="clock-3" class="h-5 w-5"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <p class="text-sm
+                            font-semibold">
+                                    Fast quotation process
+                                </p>
+
+                                <p class="mt-1
+                            text-xs
+                            text-black/40">
+                                    Simple enquiry to quote workflow
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                PROCESS
+            ============================================== -->
+
+                    <div class="relative">
+
+
+                        <!-- Base line -->
+                        <div class="absolute
+                    left-[31px]
+                    top-[34px]
+                    bottom-[34px]
+                    hidden
+                    w-px
+                    overflow-hidden
+                    bg-black/10
+                    sm:block">
+
+                            <!-- animated green line -->
+                            <div id="processLine" class="h-full
+                        w-full
+                        origin-top
+                        bg-[#96C11F]"></div>
+
+                        </div>
+
+
+
+                        <div class="relative space-y-4">
+
+
+                            <!-- =====================================
+                        STEP 01
+                    ====================================== -->
+
+                            <article class="quote-process-step group" data-quote-step>
+
+                                <div class="quote-process-number">
+                                    01
+                                </div>
+
+
+                                <div class="flex-1">
+
+                                    <div class="flex
+                                items-start
+                                justify-between
+                                gap-5">
+
+                                        <div>
+
+                                            <span class="text-[10px]
+                                        font-semibold uppercase
+                                        tracking-[0.18em]
+                                        text-black/30">
+                                                Step One
+                                            </span>
+
+
+                                            <h3 class="mt-2
+                                        text-xl
+                                        font-semibold
+                                        tracking-[-0.02em]
+                                        md:text-2xl">
+                                                Explore Products
+                                            </h3>
+
+                                        </div>
+
+
+                                        <div class="quote-process-icon">
+
+                                            <i data-lucide="search" class="h-5 w-5"></i>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <p class="mt-3
+                                max-w-xl
+                                text-sm
+                                leading-7
+                                text-black/45">
+                                        Browse our product categories,
+                                        available materials and trusted brands.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =====================================
+                        STEP 02
+                    ====================================== -->
+
+                            <article class="quote-process-step group" data-quote-step>
+
+                                <div class="quote-process-number">
+                                    02
+                                </div>
+
+
+                                <div class="flex-1">
+
+                                    <div class="flex
+                                items-start
+                                justify-between
+                                gap-5">
+
+                                        <div>
+
+                                            <span class="text-[10px]
+                                        font-semibold uppercase
+                                        tracking-[0.18em]
+                                        text-black/30">
+                                                Step Two
+                                            </span>
+
+
+                                            <h3 class="mt-2
+                                        text-xl
+                                        font-semibold
+                                        tracking-[-0.02em]
+                                        md:text-2xl">
+                                                Add to Enquiry
+                                            </h3>
+
+                                        </div>
+
+
+                                        <div class="quote-process-icon">
+
+                                            <i data-lucide="package-plus" class="h-5 w-5"></i>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <p class="mt-3
+                                max-w-xl
+                                text-sm
+                                leading-7
+                                text-black/45">
+                                        Select the required products
+                                        and enter your required quantities.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =====================================
+                        STEP 03
+                    ====================================== -->
+
+                            <article class="quote-process-step group" data-quote-step>
+
+                                <div class="quote-process-number">
+                                    03
+                                </div>
+
+
+                                <div class="flex-1">
+
+                                    <div class="flex
+                                items-start
+                                justify-between
+                                gap-5">
+
+                                        <div>
+
+                                            <span class="text-[10px]
+                                        font-semibold uppercase
+                                        tracking-[0.18em]
+                                        text-black/30">
+                                                Step Three
+                                            </span>
+
+
+                                            <h3 class="mt-2
+                                        text-xl
+                                        font-semibold
+                                        tracking-[-0.02em]
+                                        md:text-2xl">
+                                                Submit Requirements
+                                            </h3>
+
+                                        </div>
+
+
+                                        <div class="quote-process-icon">
+
+                                            <i data-lucide="send" class="h-5 w-5"></i>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <p class="mt-3
+                                max-w-xl
+                                text-sm
+                                leading-7
+                                text-black/45">
+                                        Add your company, project,
+                                        delivery and contact information.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =====================================
+                        STEP 04
+                    ====================================== -->
+
+                            <article class="quote-process-step
+                        quote-process-final
+                        group" data-quote-step>
+
+                                <div class="quote-process-number
+                            quote-process-number-final">
+                                    04
+                                </div>
+
+
+                                <div class="flex-1">
+
+                                    <div class="flex
+                                items-start
+                                justify-between
+                                gap-5">
+
+                                        <div>
+
+                                            <span class="text-[10px]
+                                        font-semibold uppercase
+                                        tracking-[0.18em]
+                                        text-black/40">
+                                                Final Step
+                                            </span>
+
+
+                                            <h3 class="mt-2
+                                        text-xl
+                                        font-semibold
+                                        tracking-[-0.02em]
+                                        md:text-2xl">
+                                                Receive Your Quote
+                                            </h3>
+
+                                        </div>
+
+
+                                        <div class="quote-process-icon
+                                    bg-[#101411]
+                                    text-white">
+
+                                            <i data-lucide="file-check-2" class="h-5 w-5"></i>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <p class="mt-3
+                                max-w-xl
+                                text-sm
+                                leading-7
+                                text-black/55">
+                                        Our team reviews your enquiry
+                                        and prepares a tailored quotation
+                                        based on your requirements.
+                                    </p>
+
+
+                                    <a href="#products" class="mt-6
+                                inline-flex
+                                items-center gap-3
+                                rounded-full
+                                bg-[#101411]
+                                px-5 py-3
+                                text-sm
+                                font-semibold
+                                text-white
+                                transition
+                                hover:bg-white
+                                hover:text-black">
+
+                                        Start Your Enquiry
+
+                                        <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+            CTA
+        ================================================== -->
+
+        <section class="bg-white
+            px-3 pb-3
+            md:px-5 md:pb-5">
+
+            <div data-image-reveal class="relative mx-auto
+                min-h-[560px]
+                max-w-[1600px]
+                overflow-hidden
+                rounded-[36px]">
+
+                <img loading="lazy" data-parallax src="/Assets/Hero.jpg" alt="Construction site" class="absolute inset-0
+                    h-[115%] w-full object-cover">
+
+                <div class="absolute inset-0
+                    bg-gradient-to-r
+                    from-black/90
+                    via-black/60
+                    to-black/20"></div>
+
+
+                <div class="relative z-10 mx-auto
+                    flex min-h-[560px]
+                    max-w-[1450px]
+                    items-center
+                    px-7 md:px-10 lg:px-14">
+
+                    <div data-reveal class="max-w-3xl">
+
+                        <p class="eyebrow text-white/50">
+                            Start Your Project
+                        </p>
+
+                        <h2 class="mt-5
+                            text-[44px]
+                            font-medium
+                            leading-[1]
+                            tracking-[-0.05em]
+                            text-white
+                            md:text-[64px]
+                            lg:text-[74px]">
+                            Ready to source
+                            the right materials?
+                        </h2>
+
+                        <p class="mt-6 max-w-xl
+                            text-base leading-7
+                            text-white/60">
+                            Send us your requirements and let our team
+                            prepare a tailored quotation for your project.
+                        </p>
+
+
+                        <div class="mt-8 flex flex-wrap gap-3">
+
+                            <a href="#quote" data-magnetic class="inline-flex
+                                items-center gap-3
+                                rounded-full
+                                bg-[#D8FF65]
+                                px-7 py-4
+                                text-sm font-semibold
+                                text-black">
+
+                                Request a Quote
+
+                                <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                            </a>
+
+
+                            <a href="#contact" class="inline-flex
+                                items-center
+                                rounded-full
+                                border border-white/20
+                                bg-white/10
+                                px-7 py-4
+                                text-sm font-medium
+                                text-white
+                                backdrop-blur-xl">
+                                Contact Team
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <style>
+            /* =========================================================
+   QUOTATION PROCESS
+========================================================= */
+
+            .quote-process-step {
+                position: relative;
+
+                display: flex;
+
+                align-items: flex-start;
+
+                gap: 22px;
+
+                min-height: 170px;
+
+                padding: 28px;
+
+                border: 1px solid rgba(16, 20, 17, 0.06);
+
+                border-radius: 28px;
+
+                background: #ffffff;
+
+                transition:
+                    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                    box-shadow 0.45s ease,
+                    border-color 0.35s ease;
+            }
+
+            .quote-process-step:hover {
+                transform: translateX(8px);
+
+                border-color:
+                    rgba(150, 193, 31, 0.25);
+
+                box-shadow:
+                    0 24px 65px rgba(16, 20, 17, 0.07);
+            }
+
+
+            /* number */
+
+            .quote-process-number {
+                position: relative;
+
+                z-index: 5;
+
+                display: flex;
+
+                width: 64px;
+                height: 64px;
+
+                flex-shrink: 0;
+
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 50%;
+
+                background: #101411;
+
+                color: #ffffff;
+
+                font-size: 13px;
+
+                font-weight: 600;
+
+                box-shadow:
+                    0 0 0 7px #F5F5F0;
+
+                transition:
+                    transform 0.35s ease,
+                    background 0.35s ease,
+                    color 0.35s ease;
+            }
+
+            .quote-process-step:hover .quote-process-number {
+                transform: scale(1.08);
+
+                background: #D8FF65;
+
+                color: #101411;
+            }
+
+
+            /* small icon */
+
+            .quote-process-icon {
+                display: flex;
+
+                width: 44px;
+                height: 44px;
+
+                flex-shrink: 0;
+
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 50%;
+
+                background: #F1F4E8;
+
+                color: #101411;
+
+                transition:
+                    transform 0.35s ease,
+                    background 0.35s ease;
+            }
+
+            .quote-process-step:hover .quote-process-icon {
+                transform: rotate(8deg);
+
+                background: #D8FF65;
+            }
+
+
+            /* final card */
+
+            .quote-process-final {
+                background: #D8FF65;
+
+                border-color: #D8FF65;
+            }
+
+            .quote-process-number-final {
+                background: #101411;
+
+                color: white;
+
+                box-shadow:
+                    0 0 0 7px #D8FF65;
+            }
+
+
+            /* progress */
+
+            #processLine {
+                transform: scaleY(0);
+
+                transform-origin:
+                    top center;
+
+                will-change:
+                    transform;
+            }
+
+
+            /* mobile */
+
+            @media (max-width: 639px) {
+
+                .quote-process-step {
+                    min-height: auto;
+
+                    padding: 22px;
+
+                    gap: 16px;
+                }
+
+                .quote-process-number {
+                    width: 52px;
+                    height: 52px;
+
+                    box-shadow: none;
+                }
+
+                .quote-process-icon {
+                    display: none;
+                }
+
+            }
+        </style>
+
+
+
+
+        <!-- =====================================================
+        FOOTER
+    ====================================================== -->
+        <!-- =========================================================
+    PREMIUM FOOTER V3
+========================================================= -->
+
+        <footer id="contact" class="footer-v3 relative overflow-hidden
+    bg-[#080D0A] text-white">
+
+            <!-- background effects -->
+            <div class="footer-v3-grid"></div>
+
+            <div class="footer-v3-light footer-v3-light-1"></div>
+            <div class="footer-v3-light footer-v3-light-2"></div>
+
+
+            <div class="relative z-10 mx-auto
+        max-w-[1450px]
+        px-5
+        pt-20
+        md:px-10 md:pt-24
+        lg:px-14 lg:pt-28">
+
+
+                <!-- =====================================================
+            LARGE INTRO
+        ====================================================== -->
+
+                <div class="grid gap-12
+            border-b border-white/10
+            pb-16
+            lg:grid-cols-[1.2fr_0.8fr]
+            lg:items-end
+            lg:gap-20
+            lg:pb-20">
+
+
+                    <!-- Left -->
+                    <div data-footer-v3>
+
+                        <div class="flex items-center gap-3">
+
+                            <span class="footer-v3-live-dot"></span>
+
+                            <span class="text-[10px]
+                        font-semibold uppercase
+                        tracking-[0.22em]
+                        text-white/35">
+                                Ready for your next project
+                            </span>
+
+                        </div>
+
+
+                        <h2 class="mt-6
+                    max-w-[900px]
+                    font-display
+                    text-[44px]
+                    font-medium
+                    leading-[0.95]
+                    tracking-[-0.06em]
+                    sm:text-[56px]
+                    md:text-[72px]
+                    lg:text-[88px]">
+
+                            Let's build
+
+                            <span class="relative
+                        inline-block
+                        text-[#D8FF65]">
+                                something
+
+                                <svg class="footer-v3-underline
+                            absolute -bottom-3
+                            left-0 h-4 w-full" viewBox="0 0 300 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 13C70 4 185 3 298 9" stroke="#D8FF65" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+
+                            </span>
+
+                            better.
+
+                        </h2>
+
+                    </div>
+
+
+                    <!-- Right -->
+                    <div data-footer-v3 class="lg:flex lg:justify-end">
+
+                        <div class="max-w-md">
+
+                            <p class="text-base
+                        leading-8
+                        text-white/45">
+                                Tell us what materials your project needs.
+                                Our team will help you source reliable products,
+                                quantities and brands for your requirement.
+                            </p>
+
+
+                            <a href="#quote" data-footer-magnetic class="footer-v3-main-button
+                        group mt-8">
+
+                                <span>
+                                    Start a Quote
+                                </span>
+
+                                <span class="footer-v3-main-button-icon">
+
+                                    <i data-lucide="arrow-up-right" class="h-5 w-5"></i>
+
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =====================================================
+            CONTACT / INFO BENTO
+        ====================================================== -->
+
+                <div class="grid gap-4
+            py-12
+            md:grid-cols-2
+            lg:grid-cols-12
+            lg:py-16">
+
+
+                    <!-- Brand -->
+                    <div data-footer-v3 class="footer-v3-box
+                md:col-span-2
+                lg:col-span-5">
+
+                        <div class="flex h-full
+                    flex-col justify-between">
+
+                            <div>
+
+                                <a href="#home" class="inline-flex items-center gap-3">
+
+                                    <div class="flex h-12 w-12
+                                items-center justify-center
+                                rounded-full
+                                bg-[#D8FF65]
+                                font-bold
+                                text-[#101411]">
+                                        TR
+                                    </div>
+
+
+                                    <div>
+
+                                        <p class="font-display
+                                    text-[16px]
+                                    font-semibold">
+                                            TOP RANGE
+                                        </p>
+
+                                        <p class="mt-1
+                                    text-[8px]
+                                    uppercase
+                                    tracking-[0.25em]
+                                    text-white/30">
+                                            Building Materials
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+
+                                <p class="mt-7 max-w-sm
+                            text-sm
+                            leading-7
+                            text-white/40">
+                                    Quality building materials and reliable
+                                    supply solutions for residential,
+                                    commercial and industrial projects.
+                                </p>
+
+                            </div>
+
+
+                            <div class="mt-12 flex
+                        items-end justify-between
+                        gap-6">
+
+                                <div>
+
+                                    <p class="text-[10px]
+                                uppercase
+                                tracking-[0.18em]
+                                text-white/25">
+                                        Based in
+                                    </p>
+
+                                    <p class="mt-2 text-sm
+                                text-white/65">
+                                        United Arab Emirates
+                                    </p>
+
+                                </div>
+
+
+                                <i data-lucide="map-pin" class="h-5 w-5
+                            text-[#D8FF65]"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+                    <a href="mailto:info@toprange.ae" data-footer-v3 class="footer-v3-box
+                group
+                lg:col-span-4">
+
+                        <div class="flex h-full
+                    flex-col justify-between">
+
+                            <div class="flex items-start
+                        justify-between">
+
+                                <span class="text-[10px]
+                            uppercase
+                            tracking-[0.18em]
+                            text-white/25">
+                                    Email
+                                </span>
+
+
+                                <span class="footer-v3-icon-circle">
+
+                                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="mt-16">
+
+                                <p class="text-[22px]
+                            font-medium
+                            tracking-[-0.03em]
+                            text-white/80
+                            transition
+                            group-hover:text-[#D8FF65]
+                            md:text-[26px]">
+                                    info@toprange.ae
+                                </p>
+
+                                <p class="mt-3
+                            text-sm
+                            text-white/30">
+                                    Send your material requirement
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Phone -->
+                    <a href="tel:+971000000000" data-footer-v3 class="footer-v3-box
+                footer-v3-lime
+                group
+                lg:col-span-3">
+
+                        <div class="flex h-full
+                    flex-col justify-between">
+
+                            <div class="flex items-start
+                        justify-between">
+
+                                <span class="text-[10px]
+                            uppercase
+                            tracking-[0.18em]
+                            text-black/45">
+                                    Call Us
+                                </span>
+
+
+                                <span class="flex h-10 w-10
+                            items-center justify-center
+                            rounded-full
+                            bg-black
+                            text-white">
+
+                                    <i data-lucide="phone" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="mt-16">
+
+                                <p class="text-[21px]
+                            font-semibold
+                            tracking-[-0.03em]
+                            text-[#101411]">
+                                    +971 00 000 0000
+                                </p>
+
+                                <p class="mt-3
+                            text-sm
+                            text-black/45">
+                                    Speak with our team
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+
+                <!-- =====================================================
+            ANIMATED HUGE TYPE
+        ====================================================== -->
+
+                <div class="footer-v3-word-wrap
+            border-t border-white/10">
+
+                    <div id="footerV3Word" class="footer-v3-word">
+                        BUILD BETTER
+                    </div>
+
+                </div>
+
+
+
+                <!-- =====================================================
+            BOTTOM
+        ====================================================== -->
+
+                <div class="flex flex-col
+            gap-5
+            border-t border-white/10
+            py-7
+            text-xs
+            text-white/25
+            md:flex-row
+            md:items-center
+            md:justify-between">
+
+                    <p>
+                        © 2026 Top Range Building Materials.
+                        All rights reserved.
+                    </p>
+
+
+                    <p>
+                        Quality · Reliability · Supply
+                    </p>
+
+
+                    <a href="#home" class="group
+                flex items-center gap-2
+                text-white/40
+                transition
+                hover:text-[#D8FF65]">
+
+                        Back to top
+
+                        <i data-lucide="arrow-up" class="h-3.5 w-3.5
+                    transition-transform
+                    group-hover:-translate-y-1"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </main>
+
+
+    <style>
+        /* =========================================================
+   FOOTER V3
+========================================================= */
+
+        .footer-v3 {
+            isolation: isolate;
+        }
+
+
+        /* background grid */
+
+        .footer-v3-grid {
+            position: absolute;
+            inset: 0;
+
+            opacity: .16;
+
+            pointer-events: none;
+
+            background-image:
+                linear-gradient(rgba(255, 255, 255, .035) 1px,
+                    transparent 1px),
+                linear-gradient(90deg,
+                    rgba(255, 255, 255, .035) 1px,
+                    transparent 1px);
+
+            background-size: 72px 72px;
+
+            mask-image:
+                linear-gradient(to bottom,
+                    black,
+                    transparent 90%);
+
+            -webkit-mask-image:
+                linear-gradient(to bottom,
+                    black,
+                    transparent 90%);
+        }
+
+
+        /* atmospheric lights */
+
+        .footer-v3-light {
+            position: absolute;
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            filter: blur(130px);
+
+            will-change: transform;
+        }
+
+        .footer-v3-light-1 {
+            width: 520px;
+            height: 520px;
+
+            top: 3%;
+            right: -250px;
+
+            background:
+                rgba(216, 255, 101, .09);
+        }
+
+        .footer-v3-light-2 {
+            width: 380px;
+            height: 380px;
+
+            bottom: 15%;
+            left: -180px;
+
+            background:
+                rgba(216, 255, 101, .045);
+        }
+
+
+        /* live dot */
+
+        .footer-v3-live-dot {
+            width: 8px;
+            height: 8px;
+
+            flex-shrink: 0;
+
+            border-radius: 50%;
+
+            background:
+                #D8FF65;
+
+            box-shadow:
+                0 0 0 0 rgba(216, 255, 101, .5);
+
+            animation:
+                footerPulse 2.4s infinite;
+        }
+
+        @keyframes footerPulse {
+
+            0% {
+                box-shadow:
+                    0 0 0 0 rgba(216, 255, 101, .45);
+            }
+
+            70% {
+                box-shadow:
+                    0 0 0 10px rgba(216, 255, 101, 0);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0 0 rgba(216, 255, 101, 0);
+            }
+
+        }
+
+
+        /* underline */
+
+        .footer-v3-underline path {
+            stroke-dasharray: 310;
+            stroke-dashoffset: 310;
+        }
+
+
+        /* main button */
+
+        .footer-v3-main-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            border-radius: 999px;
+
+            background:
+                #D8FF65;
+
+            padding:
+                8px 8px 8px 24px;
+
+            color:
+                #101411;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+        .footer-v3-main-button-icon {
+            display: flex;
+
+            width: 48px;
+            height: 48px;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                #101411;
+
+            color:
+                white;
+
+            transition:
+                transform .4s cubic-bezier(.16, 1, .3, 1);
+        }
+
+        .footer-v3-main-button:hover .footer-v3-main-button-icon {
+            transform:
+                rotate(45deg);
+        }
+
+
+        /* bento boxes */
+
+        .footer-v3-box {
+            position: relative;
+
+            min-height: 280px;
+
+            overflow: hidden;
+
+            border:
+                1px solid rgba(255, 255, 255, .1);
+
+            border-radius: 28px;
+
+            background:
+                rgba(255, 255, 255, .035);
+
+            padding: 28px;
+
+            backdrop-filter:
+                blur(18px);
+
+            -webkit-backdrop-filter:
+                blur(18px);
+
+            transition:
+                transform .45s cubic-bezier(.16, 1, .3, 1),
+                background .35s ease,
+                border-color .35s ease;
+        }
+
+        .footer-v3-box:hover {
+            transform:
+                translateY(-6px);
+
+            border-color:
+                rgba(216, 255, 101, .28);
+
+            background:
+                rgba(255, 255, 255, .055);
+        }
+
+        .footer-v3-lime {
+            border-color:
+                #D8FF65;
+
+            background:
+                #D8FF65;
+        }
+
+        .footer-v3-lime:hover {
+            background:
+                #e1ff83;
+
+            border-color:
+                #e1ff83;
+        }
+
+
+        /* icon */
+
+        .footer-v3-icon-circle {
+            display: flex;
+
+            width: 42px;
+            height: 42px;
+
+            align-items: center;
+            justify-content: center;
+
+            border:
+                1px solid rgba(255, 255, 255, .12);
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 255, 255, .04);
+
+            transition:
+                transform .35s ease,
+                background .35s ease,
+                color .35s ease;
+        }
+
+        .group:hover .footer-v3-icon-circle {
+            transform:
+                rotate(45deg);
+
+            background:
+                #D8FF65;
+
+            color:
+                #101411;
+        }
+
+
+        /* headings */
+
+        .footer-v3-section-title {
+            font-size: 11px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: .2em;
+
+            color:
+                rgba(255, 255, 255, .28);
+        }
+
+
+        /* nav */
+
+        .footer-v3-nav {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 13px;
+
+            margin-top: 22px;
+        }
+
+        .footer-v3-nav a {
+            width: fit-content;
+
+            font-size: 14px;
+
+            color:
+                rgba(255, 255, 255, .52);
+
+            transition:
+                color .3s ease,
+                transform .3s ease;
+        }
+
+        .footer-v3-nav a:hover {
+            transform:
+                translateX(5px);
+
+            color:
+                white;
+        }
+
+
+        /* social */
+
+        .footer-v3-social {
+            display: flex;
+
+            width: 44px;
+            height: 44px;
+
+            align-items: center;
+            justify-content: center;
+
+            border:
+                1px solid rgba(255, 255, 255, .12);
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 255, 255, .03);
+
+            color:
+                rgba(255, 255, 255, .65);
+
+            transition:
+                transform .35s ease,
+                background .35s ease,
+                color .35s ease;
+        }
+
+        .footer-v3-social:hover {
+            transform:
+                translateY(-5px);
+
+            background:
+                #D8FF65;
+
+            color:
+                #101411;
+        }
+
+
+        /* giant word */
+
+        .footer-v3-word-wrap {
+            overflow: hidden;
+
+            padding:
+                25px 0 18px;
+        }
+
+        .footer-v3-word {
+            white-space: nowrap;
+
+            font-family:
+                "Manrope",
+                sans-serif;
+
+            font-size:
+                clamp(84px,
+                    14vw,
+                    210px);
+
+            font-weight: 700;
+
+            line-height: .9;
+
+            letter-spacing:
+                -.075em;
+
+            color:
+                rgba(255, 255, 255, .045);
+
+            will-change:
+                transform;
+        }
+
+
+        /* reveal */
+
+        [data-footer-v3] {
+            opacity: 0;
+
+            transform:
+                translateY(45px);
+        }
+
+
+        /* mobile */
+
+        @media (max-width: 767px) {
+
+            .footer-v3-grid {
+                background-size:
+                    42px 42px;
+            }
+
+            .footer-v3-box {
+                min-height: 240px;
+
+                padding: 24px;
+            }
+
+            .footer-v3-word {
+                font-size: 25vw;
+            }
+
+        }
+    </style>
+
+    <script>/* =========================================================
+FOOTER V3 GSAP
+========================================================= */
+
+        const footerV3 =
+            document.querySelector(
+                ".footer-v3"
+            );
+
+
+        if (footerV3) {
+
+
+            /* reveal */
+
+            gsap.to(
+                "[data-footer-v3]",
+                {
+
+                    opacity: 1,
+
+                    y: 0,
+
+                    duration: 1,
+
+                    stagger: .09,
+
+                    ease:
+                        "power4.out",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            footerV3,
+
+                        start:
+                            "top 82%",
+
+                        once:
+                            true
+
+                    }
+
+                }
+            );
+
+
+            /* underline drawing */
+
+            gsap.to(
+                ".footer-v3-underline path",
+                {
+
+                    strokeDashoffset:
+                        0,
+
+                    duration:
+                        1.3,
+
+                    ease:
+                        "power3.inOut",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            ".footer-v3-underline",
+
+                        start:
+                            "top 85%",
+
+                        once:
+                            true
+
+                    }
+
+                }
+            );
+
+
+            /* giant word horizontal motion */
+
+            gsap.fromTo(
+                "#footerV3Word",
+
+                {
+                    xPercent:
+                        12
+                },
+
+                {
+                    xPercent:
+                        -8,
+
+                    ease:
+                        "none",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            "#footerV3Word",
+
+                        start:
+                            "top bottom",
+
+                        end:
+                            "bottom top",
+
+                        scrub:
+                            1.2
+
+                    }
+
+                }
+            );
+
+
+            /* background glow */
+
+            gsap.to(
+                ".footer-v3-light-1",
+                {
+
+                    x:
+                        -130,
+
+                    y:
+                        90,
+
+                    ease:
+                        "none",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            footerV3,
+
+                        start:
+                            "top bottom",
+
+                        end:
+                            "bottom top",
+
+                        scrub:
+                            2
+
+                    }
+
+                }
+            );
+
+
+            gsap.to(
+                ".footer-v3-light-2",
+                {
+
+                    x:
+                        100,
+
+                    y:
+                        -60,
+
+                    ease:
+                        "none",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            footerV3,
+
+                        start:
+                            "top bottom",
+
+                        end:
+                            "bottom top",
+
+                        scrub:
+                            2
+
+                    }
+
+                }
+            );
+
+
+            /* bento card reveal */
+
+            gsap.from(
+                ".footer-v3-box",
+                {
+
+                    scale:
+                        .96,
+
+                    y:
+                        35,
+
+                    duration:
+                        1,
+
+                    stagger:
+                        .08,
+
+                    ease:
+                        "power4.out",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            ".footer-v3-box",
+
+                        start:
+                            "top 88%",
+
+                        once:
+                            true
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =========================================================
+           FOOTER MAGNETIC BUTTON
+        ========================================================= */
+
+        if (
+            window.matchMedia(
+                "(pointer: fine)"
+            ).matches
+        ) {
+
+            document
+                .querySelectorAll(
+                    "[data-footer-magnetic]"
+                )
+                .forEach(button => {
+
+                    button.addEventListener(
+                        "mousemove",
+                        event => {
+
+                            const rect =
+                                button
+                                    .getBoundingClientRect();
+
+                            const x =
+                                event.clientX -
+                                rect.left -
+                                rect.width / 2;
+
+                            const y =
+                                event.clientY -
+                                rect.top -
+                                rect.height / 2;
+
+
+                            gsap.to(
+                                button,
+                                {
+
+                                    x:
+                                        x * .1,
+
+                                    y:
+                                        y * .1,
+
+                                    duration:
+                                        .3,
+
+                                    ease:
+                                        "power2.out"
+
+                                }
+                            );
+
+                        }
+                    );
+
+
+                    button.addEventListener(
+                        "mouseleave",
+                        () => {
+
+                            gsap.to(
+                                button,
+                                {
+
+                                    x:
+                                        0,
+
+                                    y:
+                                        0,
+
+                                    duration:
+                                        .6,
+
+                                    ease:
+                                        "elastic.out(1,.4)"
+
+                                }
+                            );
+
+                        }
+                    );
+
+                });
+
+        }</script>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
