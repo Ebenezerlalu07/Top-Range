@@ -122,7 +122,7 @@ button {
             rgba(7, 15, 13, .04) 100%),
         linear-gradient(0deg,
             rgba(7, 15, 13, .82) 0%,
-            transparent 58%),
+            transparent 30%),
         url("Assets/Hero.jpg");
 
     background-size: cover;
@@ -178,6 +178,13 @@ button {
 }
 
 .nav-link:hover {
+    background:
+        rgba(255, 255, 255, .1);
+
+    color: white;
+}
+
+.active1 {
     background:
         rgba(255, 255, 255, .1);
 
@@ -2276,4 +2283,440 @@ button {
     }
 
 }
+
+
+
+
+
+/* =========================================================
+   FOOTER V3
+========================================================= */
+
+.footer-v3 {
+    isolation: isolate;
+}
+
+
+/* background grid */
+
+.footer-v3-grid {
+    position: absolute;
+    inset: 0;
+
+    opacity: .16;
+
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .035) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
+            rgba(255, 255, 255, .035) 1px,
+            transparent 1px);
+
+    background-size: 72px 72px;
+
+    mask-image:
+        linear-gradient(to bottom,
+            black,
+            transparent 90%);
+
+    -webkit-mask-image:
+        linear-gradient(to bottom,
+            black,
+            transparent 90%);
+}
+
+
+/* atmospheric lights */
+
+.footer-v3-light {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(130px);
+
+    will-change: transform;
+}
+
+.footer-v3-light-1 {
+    width: 520px;
+    height: 520px;
+
+    top: 3%;
+    right: -250px;
+
+    background:
+        rgba(216, 255, 101, .09);
+}
+
+.footer-v3-light-2 {
+    width: 380px;
+    height: 380px;
+
+    bottom: 15%;
+    left: -180px;
+
+    background:
+        rgba(216, 255, 101, .045);
+}
+
+
+/* live dot */
+
+.footer-v3-live-dot {
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        #D8FF65;
+
+    box-shadow:
+        0 0 0 0 rgba(216, 255, 101, .5);
+
+    animation:
+        footerPulse 2.4s infinite;
+}
+
+@keyframes footerPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(216, 255, 101, .45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 10px rgba(216, 255, 101, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(216, 255, 101, 0);
+    }
+
+}
+
+
+/* underline */
+
+.footer-v3-underline path {
+    stroke-dasharray: 310;
+    stroke-dashoffset: 310;
+}
+
+
+/* main button */
+
+.footer-v3-main-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    border-radius: 999px;
+
+    background:
+        #D8FF65;
+
+    padding:
+        8px 8px 8px 24px;
+
+    color:
+        #101411;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.footer-v3-main-button-icon {
+    display: flex;
+
+    width: 48px;
+    height: 48px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        #101411;
+
+    color:
+        white;
+
+    transition:
+        transform .4s cubic-bezier(.16, 1, .3, 1);
+}
+
+.footer-v3-main-button:hover .footer-v3-main-button-icon {
+    transform:
+        rotate(45deg);
+}
+
+
+/* bento boxes */
+
+.footer-v3-box {
+    position: relative;
+
+    min-height: 280px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, .1);
+
+    border-radius: 28px;
+
+    background:
+        rgba(255, 255, 255, .035);
+
+    padding: 28px;
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    transition:
+        transform .45s cubic-bezier(.16, 1, .3, 1),
+        background .35s ease,
+        border-color .35s ease;
+}
+
+.footer-v3-box:hover {
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(216, 255, 101, .28);
+
+    background:
+        rgba(255, 255, 255, .055);
+}
+
+.footer-v3-lime {
+    border-color:
+        #D8FF65;
+
+    background:
+        #D8FF65;
+}
+
+.footer-v3-lime:hover {
+    background:
+        #e1ff83;
+
+    border-color:
+        #e1ff83;
+}
+
+
+/* icon */
+
+.footer-v3-icon-circle {
+    display: flex;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, .04);
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+.group:hover .footer-v3-icon-circle {
+    transform:
+        rotate(45deg);
+
+    background:
+        #D8FF65;
+
+    color:
+        #101411;
+}
+
+
+/* headings */
+
+.footer-v3-section-title {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .2em;
+
+    color:
+        rgba(255, 255, 255, .28);
+}
+
+
+/* nav */
+
+.footer-v3-nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-top: 22px;
+}
+
+.footer-v3-nav a {
+    width: fit-content;
+
+    font-size: 14px;
+
+    color:
+        rgba(255, 255, 255, .52);
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+.footer-v3-nav a:hover {
+    transform:
+        translateX(5px);
+
+    color:
+        white;
+}
+
+
+/* social */
+
+.footer-v3-social {
+    display: flex;
+
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, .03);
+
+    color:
+        rgba(255, 255, 255, .65);
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+.footer-v3-social:hover {
+    transform:
+        translateY(-5px);
+
+    background:
+        #D8FF65;
+
+    color:
+        #101411;
+}
+
+
+/* giant word */
+
+.footer-v3-word-wrap {
+    overflow: hidden;
+
+    padding:
+        25px 0 18px;
+}
+
+.footer-v3-word {
+    white-space: nowrap;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(84px,
+            14vw,
+            210px);
+
+    font-weight: 700;
+
+    line-height: .9;
+
+    letter-spacing:
+        -.075em;
+
+    color:
+        rgba(255, 255, 255, .045);
+
+    will-change:
+        transform;
+}
+
+
+/* reveal */
+
+[data-footer-v3] {
+    opacity: 0;
+
+    transform:
+        translateY(45px);
+}
+
+
+/* mobile */
+
+@media (max-width: 767px) {
+
+    .footer-v3-grid {
+        background-size:
+            42px 42px;
+    }
+
+    .footer-v3-box {
+        min-height: 240px;
+
+        padding: 24px;
+    }
+
+    .footer-v3-word {
+        font-size: 25vw;
+    }
+
+}
+
+
 

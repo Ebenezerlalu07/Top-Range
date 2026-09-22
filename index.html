@@ -50,6 +50,21 @@
 
 <body class="bg-[#F5F5F0] text-[#101411]">
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/971501234567?text=Hi%20Top%20Range%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+        target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" class="fixed bottom-6 right-6 z-[9999]
+           flex h-14 w-14 items-center justify-center
+           rounded-full bg-[#25D366] text-white
+           shadow-[0_10px_30px_rgba(0,0,0,0.25)]
+           transition-all duration-300
+           hover:-translate-y-1 hover:scale-105
+           hover:shadow-[0_14px_35px_rgba(37,211,102,0.4)]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-7 w-7 fill-current" aria-hidden="true">
+            <path
+                d="M16.04 3C9.4 3 4 8.39 4 15.03c0 2.12.55 4.19 1.6 6.01L3.9 27.24l6.35-1.66a12 12 0 0 0 5.79 1.47h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 8.39 22.68 3 16.04 3Zm0 21.99h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.22-3.77.99 1.01-3.67-.24-.38a9.94 9.94 0 0 1-1.53-5.29c0-5.5 4.48-9.97 9.98-9.97S26 9.53 26 15.03c0 5.49-4.47 9.96-9.96 9.96Zm5.46-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z" />
+        </svg>
+    </a>
+
     <!-- Scroll progress -->
     <div id="scrollProgress"></div>
 
@@ -73,22 +88,17 @@
             md:px-5">
 
             <!-- Logo -->
-            <a href="#home" class="flex items-center gap-3 text-white">
+            <a href="/index.html" class=" items-center gap-3 text-white">
 
-                <div class="flex h-11 w-11
-                    items-center justify-center
-                    rounded-full
-                    bg-[#D8FF65]
-                    text-sm font-bold
-                    text-[#101411]">
-                    TR
+                <div class="flex h-16 items-center">
+                    <img src="/Assets/Logo 1.png" alt="Top Range Logo" class="h-14 w-auto object-contain" />
                 </div>
 
-                <div class="hidden sm:block">
+                <!-- <div class="hidden sm:block">
 
-                    <p class="text-[15px] font-semibold leading-none">
+                    <h2 class="text-[15px] font-semibold leading-none">
                         TOP RANGE
-                    </p>
+                    </h2>
 
                     <p class="mt-1 text-[8px]
                         uppercase tracking-[0.22em]
@@ -96,7 +106,7 @@
                         Building Materials
                     </p>
 
-                </div>
+                </div> -->
 
             </a>
 
@@ -112,13 +122,13 @@
                 backdrop-blur-xl
                 lg:flex">
 
-                <a href="#home" class="nav-link rounded-full
+                <a href="/index.html" class="active1 nav-link rounded-full
                     px-5 py-2.5 text-sm
                     text-white/75">
                     Home
                 </a>
 
-                <a href="#about" class="nav-link rounded-full
+                <a href="/about.html" class="nav-link rounded-full
                     px-5 py-2.5 text-sm
                     text-white/75">
                     About
@@ -130,11 +140,6 @@
                     Products
                 </a>
 
-                <a href="#projects" class="nav-link rounded-full
-                    px-5 py-2.5 text-sm
-                    text-white/75">
-                    Projects
-                </a>
 
                 <a href="#contact" class="nav-link rounded-full
                     px-5 py-2.5 text-sm
@@ -157,7 +162,7 @@
                     transition
                     md:flex">
 
-                    Request a Quote
+                    Login
 
                     <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
 
@@ -192,13 +197,13 @@
 
             <div class="flex flex-col p-5">
 
-                <a href="#home" class="mobile-link
+                <a href="/index.html" class="mobile-link
                     border-b border-white/10
                     px-2 py-4 text-white">
                     Home
                 </a>
 
-                <a href="#about" class="mobile-link
+                <a href="/about.html" class="mobile-link
                     border-b border-white/10
                     px-2 py-4 text-white/70">
                     About
@@ -210,11 +215,7 @@
                     Products
                 </a>
 
-                <a href="#projects" class="mobile-link
-                    border-b border-white/10
-                    px-2 py-4 text-white/70">
-                    Projects
-                </a>
+
 
                 <a href="#contact" class="mobile-link
                     px-2 py-4 text-white/70">
@@ -229,7 +230,7 @@
                     text-sm font-semibold
                     text-[#101411]">
 
-                    Request a Quote
+                    Login
 
                     <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
 
@@ -276,7 +277,7 @@
                         font-medium uppercase
                         tracking-[0.22em]
                         text-white/65">
-                        Building Materials · Construction Solutions
+                        Building Materials Solutions
                     </span>
 
                 </div>
@@ -285,54 +286,56 @@
                 <div class="grid items-end gap-10
                     lg:grid-cols-[minmax(0,1fr)_360px]">
 
-                    <!-- Hero copy -->
-                    <div>
+                    <!-- Hero Copy -->
+                    <div class="relative z-20">
 
-                        <h1 class="hero-title
-                            font-display
-                            max-w-[1050px]
-                            text-[46px]
-                            font-medium
-                            leading-[0.94]
-                            tracking-[-0.055em]
-                            text-white
-                            sm:text-[60px]
-                            md:text-[76px]
-                            lg:text-[88px]
-                            xl:text-[100px]">
+                        <h1 class="
+        font-display
+        max-w-[1050px]
+        text-[46px]
+        font-medium
+        leading-[0.94]
+        tracking-[-0.055em]
+        text-white
+        sm:text-[60px]
+        md:text-[76px]
+        lg:text-[88px]
+        xl:text-[100px]
+    ">
 
                             Materials that
 
-                            <br>
+                            <br />
 
                             build
 
-                            <span class="relative inline-flex
-                                h-[1.05em]
-                                overflow-hidden
-                                align-bottom
-                                text-[#D8FF65]">
+                            <!-- WORD SLIDER -->
+                            <span class="
+            relative
+            inline-flex
+            h-[0.98em]
+            overflow-hidden
+            align-bottom
+            text-[#D8FF65]
+        ">
 
-                                <span id="wordSlider">
+                                <span id="wordSlider"
+                                    class="block transition-transform duration-700 ease-[cubic-bezier(.76,0,.24,1)]">
 
-                                    <span class="flex h-[1.05em] items-center">
+                                    <span class="flex h-[0.98em] items-center">
                                         better.
                                     </span>
 
-                                    <span class="flex h-[1.05em] items-center">
+                                    <span class="flex h-[0.98em] items-center">
                                         stronger.
                                     </span>
 
-                                    <span class="flex h-[1.05em] items-center">
+                                    <span class="flex h-[0.98em] items-center">
                                         smarter.
                                     </span>
 
-                                    <span class="flex h-[1.05em] items-center">
+                                    <span class="flex h-[0.98em] items-center">
                                         greener.
-                                    </span>
-
-                                    <span class="flex h-[1.05em] items-center">
-                                        better.
                                     </span>
 
                                 </span>
@@ -342,49 +345,68 @@
                         </h1>
 
 
-                        <p class="hero-copy mt-5
-                            max-w-2xl
-                            text-[15px]
-                            leading-7
-                            text-white/65
-                            md:text-lg">
-
+                        <!-- Description -->
+                        <p class="
+        mt-6
+        max-w-2xl
+        text-[15px]
+        leading-7
+        text-white/70
+        md:text-lg
+    ">
                             Your trusted source for quality building materials,
                             construction products and reliable supply solutions
                             for residential, commercial and industrial projects.
-
                         </p>
 
 
-                        <div class="hero-actions mt-7
-                            flex flex-wrap gap-3">
+                        <!-- Actions -->
+                        <div class="mt-8 flex flex-wrap gap-3">
 
-                            <a href="#products" data-magnetic class="group flex
-                                items-center gap-3
-                                rounded-full
-                                bg-[#D8FF65]
-                                px-6 py-4
-                                text-sm font-semibold
-                                text-[#101411]">
+                            <a href="#products" data-magnetic class="
+            group
+            flex
+            items-center
+            gap-3
+            rounded-full
+            bg-[#D8FF65]
+            px-6
+            py-4
+            text-sm
+            font-semibold
+            text-[#101411]
+            transition
+            duration-300
+            hover:scale-[1.03]
+            hover:bg-white
+        ">
 
                                 Explore Products
 
-                                <i data-lucide="arrow-up-right" class="hover-arrow h-4 w-4"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i>
 
                             </a>
 
 
-                            <a href="#quote" class="flex items-center
-                                rounded-full
-                                border border-white/20
-                                bg-white/10
-                                px-6 py-4
-                                text-sm font-medium
-                                text-white
-                                backdrop-blur-xl
-                                transition
-                                hover:bg-white
-                                hover:text-black">
+                            <a href="#quote" class="
+            flex
+            items-center
+            rounded-full
+            border
+            border-white/20
+            bg-white/10
+            px-6
+            py-4
+            text-sm
+            font-medium
+            text-white
+            backdrop-blur-xl
+            transition
+            duration-300
+            hover:bg-white
+            hover:text-black
+        ">
                                 Request a Quote
                             </a>
 
@@ -1834,9 +1856,7 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                         rounded-[28px]
                         bg-[#111]">
 
-                        <img loading="lazy"
-                            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=82"
-                            alt="Cement" class="category-image
+                        <img loading="lazy" src="/Assets/cement.jpg" alt="Cement" class="category-image
                             absolute inset-0
                             h-full w-full object-cover">
 
@@ -1889,9 +1909,7 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                         rounded-[28px]
                         bg-[#111]">
 
-                        <img loading="lazy"
-                            src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=82"
-                            alt="Steel" class="category-image
+                        <img loading="lazy" src="/Assets/steel.jpg" alt="Steel" class="category-image
                             absolute inset-0
                             h-full w-full object-cover">
 
@@ -1943,9 +1961,7 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                         rounded-[28px]
                         bg-[#111]">
 
-                        <img loading="lazy"
-                            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=82"
-                            alt="Paints" class="category-image
+                        <img loading="lazy" src="/Assets/Paint.jpg" alt="Paints" class="category-image
                             absolute inset-0
                             h-full w-full object-cover">
 
@@ -2023,9 +2039,8 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                             overflow-hidden
                             md:h-[650px]">
 
-                            <img loading="lazy" data-parallax
-                                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"
-                                alt="Construction project" class="h-[115%] w-full object-cover">
+                            <img loading="lazy" data-parallax src="/Assets/site.jpg" alt="Construction project"
+                                class="h-[115%] w-full object-cover">
 
                         </div>
 
@@ -2171,17 +2186,14 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                         rounded-[32px]
                         lg:h-full">
 
-                        <img loading="lazy" data-story-image="0"
-                            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"
-                            alt="Foundation" class="story-image">
+                        <img loading="lazy" data-story-image="0" src="/Assets/baement.jpg" alt="Foundation"
+                            class="story-image">
 
-                        <img loading="lazy" data-story-image="1"
-                            src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1400&q=85"
-                            alt="Structure" class="story-image">
+                        <img loading="lazy" data-story-image="1" src="/Assets/constraction.jpg" alt="Structure"
+                            class="story-image">
 
-                        <img loading="lazy" data-story-image="2"
-                            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=85"
-                            alt="Finishing" class="story-image">
+                        <img loading="lazy" data-story-image="2" src="/Assets/final paiting.jpg" alt="Finishing"
+                            class="story-image">
 
 
                         <div class="absolute inset-0
@@ -2421,17 +2433,13 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                 <!-- horizontal card -->
                 <article class="horizontal-card horizontal-image-card">
 
-                    <img loading="lazy"
-                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"
-                        alt="Concrete">
+                    <img loading="lazy" src="/Assets/Driller.jpg" alt="Concrete">
 
                     <div class="horizontal-overlay"></div>
 
                     <div class="horizontal-copy">
 
-                        <span>01 · Foundation</span>
-
-                        <h3>Cement & Concrete</h3>
+                        <h3>Drill & Driver</h3>
 
                         <p>
                             Dependable solutions for foundations
@@ -2445,17 +2453,14 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
 
                 <article class="horizontal-card horizontal-image-card">
 
-                    <img loading="lazy"
-                        src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1400&q=85"
-                        alt="Steel">
+                    <img loading="lazy" src="/Assets/angle grinter.jpg" alt="Steel">
 
                     <div class="horizontal-overlay"></div>
 
                     <div class="horizontal-copy">
 
-                        <span>02 · Structure</span>
 
-                        <h3>Steel & Metals</h3>
+                        <h3>Angle Grinder</h3>
 
                         <p>
                             Strength, precision and durability for
@@ -2469,17 +2474,14 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
 
                 <article class="horizontal-card horizontal-image-card">
 
-                    <img loading="lazy"
-                        src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=85"
-                        alt="Finishes">
+                    <img loading="lazy" src="/Assets/hammer driller.jpg" alt="Finishes">
 
                     <div class="horizontal-overlay"></div>
 
                     <div class="horizontal-copy">
 
-                        <span>03 · Finish</span>
 
-                        <h3>Paints & Coatings</h3>
+                        <h3>Cordless Hammer Drill</h3>
 
                         <p>
                             Finishing solutions developed for
@@ -2739,8 +2741,7 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                         min-h-[520px]
                         lg:col-span-7">
 
-                        <img loading="lazy" data-parallax
-                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85"
+                        <img loading="lazy" data-parallax src="/Assets/construction full.jpg"
                             alt="Commercial high rise">
 
                         <div class="project-overlay"></div>
@@ -2763,9 +2764,7 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
 
                         <article class="project-card group min-h-[250px]">
 
-                            <img loading="lazy" data-parallax
-                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
-                                alt="Villa">
+                            <img loading="lazy" data-parallax src="/Assets/Hero.jpg" alt="Villa">
 
                             <div class="project-overlay"></div>
 
@@ -3308,23 +3307,10 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
                                 text-sm font-semibold
                                 text-black">
 
-                                Request a Quote
+                                Get in Touch
 
                                 <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
 
-                            </a>
-
-
-                            <a href="#contact" class="inline-flex
-                                items-center
-                                rounded-full
-                                border border-white/20
-                                bg-white/10
-                                px-7 py-4
-                                text-sm font-medium
-                                text-white
-                                backdrop-blur-xl">
-                                Contact Team
                             </a>
 
                         </div>
@@ -3663,32 +3649,10 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
 
                                 <a href="#home" class="inline-flex items-center gap-3">
 
-                                    <div class="flex h-12 w-12
-                                items-center justify-center
-                                rounded-full
-                                bg-[#D8FF65]
-                                font-bold
-                                text-[#101411]">
-                                        TR
-                                    </div>
 
-
-                                    <div>
-
-                                        <p class="font-display
-                                    text-[16px]
-                                    font-semibold">
-                                            TOP RANGE
-                                        </p>
-
-                                        <p class="mt-1
-                                    text-[8px]
-                                    uppercase
-                                    tracking-[0.25em]
-                                    text-white/30">
-                                            Building Materials
-                                        </p>
-
+                                    <div class="flex h-16 items-center">
+                                        <img src="/Assets/Logo 1.png" alt="Top Range Logo"
+                                            class="h-14 w-auto object-contain" />
                                     </div>
 
                                 </a>
@@ -3913,437 +3877,6 @@ SAFE VERSION - NO GLOBAL VARIABLE CONFLICTS
     </main>
 
 
-    <style>
-        /* =========================================================
-   FOOTER V3
-========================================================= */
-
-        .footer-v3 {
-            isolation: isolate;
-        }
-
-
-        /* background grid */
-
-        .footer-v3-grid {
-            position: absolute;
-            inset: 0;
-
-            opacity: .16;
-
-            pointer-events: none;
-
-            background-image:
-                linear-gradient(rgba(255, 255, 255, .035) 1px,
-                    transparent 1px),
-                linear-gradient(90deg,
-                    rgba(255, 255, 255, .035) 1px,
-                    transparent 1px);
-
-            background-size: 72px 72px;
-
-            mask-image:
-                linear-gradient(to bottom,
-                    black,
-                    transparent 90%);
-
-            -webkit-mask-image:
-                linear-gradient(to bottom,
-                    black,
-                    transparent 90%);
-        }
-
-
-        /* atmospheric lights */
-
-        .footer-v3-light {
-            position: absolute;
-
-            border-radius: 50%;
-
-            pointer-events: none;
-
-            filter: blur(130px);
-
-            will-change: transform;
-        }
-
-        .footer-v3-light-1 {
-            width: 520px;
-            height: 520px;
-
-            top: 3%;
-            right: -250px;
-
-            background:
-                rgba(216, 255, 101, .09);
-        }
-
-        .footer-v3-light-2 {
-            width: 380px;
-            height: 380px;
-
-            bottom: 15%;
-            left: -180px;
-
-            background:
-                rgba(216, 255, 101, .045);
-        }
-
-
-        /* live dot */
-
-        .footer-v3-live-dot {
-            width: 8px;
-            height: 8px;
-
-            flex-shrink: 0;
-
-            border-radius: 50%;
-
-            background:
-                #D8FF65;
-
-            box-shadow:
-                0 0 0 0 rgba(216, 255, 101, .5);
-
-            animation:
-                footerPulse 2.4s infinite;
-        }
-
-        @keyframes footerPulse {
-
-            0% {
-                box-shadow:
-                    0 0 0 0 rgba(216, 255, 101, .45);
-            }
-
-            70% {
-                box-shadow:
-                    0 0 0 10px rgba(216, 255, 101, 0);
-            }
-
-            100% {
-                box-shadow:
-                    0 0 0 0 rgba(216, 255, 101, 0);
-            }
-
-        }
-
-
-        /* underline */
-
-        .footer-v3-underline path {
-            stroke-dasharray: 310;
-            stroke-dashoffset: 310;
-        }
-
-
-        /* main button */
-
-        .footer-v3-main-button {
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 16px;
-
-            border-radius: 999px;
-
-            background:
-                #D8FF65;
-
-            padding:
-                8px 8px 8px 24px;
-
-            color:
-                #101411;
-
-            font-size: 14px;
-
-            font-weight: 600;
-        }
-
-        .footer-v3-main-button-icon {
-            display: flex;
-
-            width: 48px;
-            height: 48px;
-
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background:
-                #101411;
-
-            color:
-                white;
-
-            transition:
-                transform .4s cubic-bezier(.16, 1, .3, 1);
-        }
-
-        .footer-v3-main-button:hover .footer-v3-main-button-icon {
-            transform:
-                rotate(45deg);
-        }
-
-
-        /* bento boxes */
-
-        .footer-v3-box {
-            position: relative;
-
-            min-height: 280px;
-
-            overflow: hidden;
-
-            border:
-                1px solid rgba(255, 255, 255, .1);
-
-            border-radius: 28px;
-
-            background:
-                rgba(255, 255, 255, .035);
-
-            padding: 28px;
-
-            backdrop-filter:
-                blur(18px);
-
-            -webkit-backdrop-filter:
-                blur(18px);
-
-            transition:
-                transform .45s cubic-bezier(.16, 1, .3, 1),
-                background .35s ease,
-                border-color .35s ease;
-        }
-
-        .footer-v3-box:hover {
-            transform:
-                translateY(-6px);
-
-            border-color:
-                rgba(216, 255, 101, .28);
-
-            background:
-                rgba(255, 255, 255, .055);
-        }
-
-        .footer-v3-lime {
-            border-color:
-                #D8FF65;
-
-            background:
-                #D8FF65;
-        }
-
-        .footer-v3-lime:hover {
-            background:
-                #e1ff83;
-
-            border-color:
-                #e1ff83;
-        }
-
-
-        /* icon */
-
-        .footer-v3-icon-circle {
-            display: flex;
-
-            width: 42px;
-            height: 42px;
-
-            align-items: center;
-            justify-content: center;
-
-            border:
-                1px solid rgba(255, 255, 255, .12);
-
-            border-radius: 50%;
-
-            background:
-                rgba(255, 255, 255, .04);
-
-            transition:
-                transform .35s ease,
-                background .35s ease,
-                color .35s ease;
-        }
-
-        .group:hover .footer-v3-icon-circle {
-            transform:
-                rotate(45deg);
-
-            background:
-                #D8FF65;
-
-            color:
-                #101411;
-        }
-
-
-        /* headings */
-
-        .footer-v3-section-title {
-            font-size: 11px;
-
-            font-weight: 600;
-
-            text-transform: uppercase;
-
-            letter-spacing: .2em;
-
-            color:
-                rgba(255, 255, 255, .28);
-        }
-
-
-        /* nav */
-
-        .footer-v3-nav {
-            display: flex;
-
-            flex-direction: column;
-
-            gap: 13px;
-
-            margin-top: 22px;
-        }
-
-        .footer-v3-nav a {
-            width: fit-content;
-
-            font-size: 14px;
-
-            color:
-                rgba(255, 255, 255, .52);
-
-            transition:
-                color .3s ease,
-                transform .3s ease;
-        }
-
-        .footer-v3-nav a:hover {
-            transform:
-                translateX(5px);
-
-            color:
-                white;
-        }
-
-
-        /* social */
-
-        .footer-v3-social {
-            display: flex;
-
-            width: 44px;
-            height: 44px;
-
-            align-items: center;
-            justify-content: center;
-
-            border:
-                1px solid rgba(255, 255, 255, .12);
-
-            border-radius: 50%;
-
-            background:
-                rgba(255, 255, 255, .03);
-
-            color:
-                rgba(255, 255, 255, .65);
-
-            transition:
-                transform .35s ease,
-                background .35s ease,
-                color .35s ease;
-        }
-
-        .footer-v3-social:hover {
-            transform:
-                translateY(-5px);
-
-            background:
-                #D8FF65;
-
-            color:
-                #101411;
-        }
-
-
-        /* giant word */
-
-        .footer-v3-word-wrap {
-            overflow: hidden;
-
-            padding:
-                25px 0 18px;
-        }
-
-        .footer-v3-word {
-            white-space: nowrap;
-
-            font-family:
-                "Manrope",
-                sans-serif;
-
-            font-size:
-                clamp(84px,
-                    14vw,
-                    210px);
-
-            font-weight: 700;
-
-            line-height: .9;
-
-            letter-spacing:
-                -.075em;
-
-            color:
-                rgba(255, 255, 255, .045);
-
-            will-change:
-                transform;
-        }
-
-
-        /* reveal */
-
-        [data-footer-v3] {
-            opacity: 0;
-
-            transform:
-                translateY(45px);
-        }
-
-
-        /* mobile */
-
-        @media (max-width: 767px) {
-
-            .footer-v3-grid {
-                background-size:
-                    42px 42px;
-            }
-
-            .footer-v3-box {
-                min-height: 240px;
-
-                padding: 24px;
-            }
-
-            .footer-v3-word {
-                font-size: 25vw;
-            }
-
-        }
-    </style>
 
     <script>/* =========================================================
 FOOTER V3 GSAP

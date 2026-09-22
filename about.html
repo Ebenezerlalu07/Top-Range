@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Top Range Building Materials - quality construction materials, reliable supply and quotation solutions.">
+
+    <title>Top Range Building Materials</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["DM Sans", "sans-serif"],
+                        display: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+
+<body class="bg-[#F5F5F0] text-[#101411]">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/971501234567?text=Hi%20Top%20Range%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+        target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" class="fixed bottom-6 right-6 z-[9999]
+           flex h-14 w-14 items-center justify-center
+           rounded-full bg-[#25D366] text-white
+           shadow-[0_10px_30px_rgba(0,0,0,0.25)]
+           transition-all duration-300
+           hover:-translate-y-1 hover:scale-105
+           hover:shadow-[0_14px_35px_rgba(37,211,102,0.4)]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-7 w-7 fill-current" aria-hidden="true">
+            <path
+                d="M16.04 3C9.4 3 4 8.39 4 15.03c0 2.12.55 4.19 1.6 6.01L3.9 27.24l6.35-1.66a12 12 0 0 0 5.79 1.47h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 8.39 22.68 3 16.04 3Zm0 21.99h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.22-3.77.99 1.01-3.67-.24-.38a9.94 9.94 0 0 1-1.53-5.29c0-5.5 4.48-9.97 9.98-9.97S26 9.53 26 15.03c0 5.49-4.47 9.96-9.96 9.96Zm5.46-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z" />
+        </svg>
+    </a>
+
+    <!-- Scroll progress -->
+    <div id="scrollProgress"></div>
+
+
+    <!-- =====================================================
+        NAVBAR
+    ====================================================== -->
+
+    <header id="siteHeader" class="fixed left-0 top-0 z-50
+        w-full px-4 pt-4
+        md:px-7">
+
+        <nav id="mainNavbar" class="mx-auto flex max-w-[1450px]
+            items-center justify-between
+            rounded-full
+            border border-white/15
+            bg-black/20
+            px-4 py-3
+            shadow-2xl
+            backdrop-blur-xl
+            md:px-5">
+
+            <!-- Logo -->
+            <a href="/index.html" class=" items-center gap-3 text-white">
+
+                <div class="flex h-16 items-center">
+                    <img src="/Assets/Logo 1.png" alt="Top Range Logo" class="h-14 w-auto object-contain" />
+                </div>
+
+                <!-- <div class="hidden sm:block">
+
+                    <h2 class="text-[15px] font-semibold leading-none">
+                        TOP RANGE
+                    </h2>
+
+                    <p class="mt-1 text-[8px]
+                        uppercase tracking-[0.22em]
+                        text-white/55">
+                        Building Materials
+                    </p>
+
+                </div> -->
+
+            </a>
+
+
+            <!-- Desktop Nav -->
+            <div class="absolute left-1/2 hidden
+                -translate-x-1/2
+                items-center gap-1
+                rounded-full
+                border border-white/10
+                bg-white/10
+                p-1
+                backdrop-blur-xl
+                lg:flex">
+
+                <a href="/index.html" class=" nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Home
+                </a>
+
+                <a href="/about.html" class="active1 nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    About
+                </a>
+
+                <a href="#products" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Products
+                </a>
+
+
+                <a href="#contact" class="nav-link rounded-full
+                    px-5 py-2.5 text-sm
+                    text-white/75">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Right -->
+            <div class="flex items-center gap-2">
+
+                <a href="#quote" data-magnetic class="hidden items-center gap-2
+                    rounded-full
+                    bg-[#D8FF65]
+                    px-5 py-3
+                    text-sm font-semibold
+                    text-[#101411]
+                    transition
+                    md:flex">
+
+                    Login
+
+                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                </a>
+
+
+                <button id="menuButton" aria-label="Toggle navigation" class="flex h-11 w-11
+                    items-center justify-center
+                    rounded-full
+                    border border-white/15
+                    bg-white/10
+                    text-white
+                    lg:hidden">
+
+                    <i data-lucide="menu" class="h-5 w-5"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Mobile -->
+        <div id="mobileMenu" class="mx-auto mt-3
+            max-w-[1450px]
+            rounded-[28px]
+            border border-white/10
+            bg-[#101411]/95
+            backdrop-blur-2xl
+            lg:hidden">
+
+            <div class="flex flex-col p-5">
+
+                <a href="/index.html" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white/70">
+                    Home
+                </a>
+
+                <a href="/about.html" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white">
+                    About
+                </a>
+
+                <a href="#products" class="mobile-link
+                    border-b border-white/10
+                    px-2 py-4 text-white/70">
+                    Products
+                </a>
+
+
+
+                <a href="#contact" class="mobile-link
+                    px-2 py-4 text-white/70">
+                    Contact
+                </a>
+
+                <a href="#quote" class="mobile-link mt-4
+                    flex items-center justify-between
+                    rounded-full
+                    bg-[#D8FF65]
+                    px-5 py-4
+                    text-sm font-semibold
+                    text-[#101411]">
+
+                    Login
+
+                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+        HERO
+    ====================================================== -->
+
+    <main class="overflow-hidden bg-[#F5F5F0]">
+
+        <!-- =========================================================
+        ABOUT HERO
+    ========================================================== -->
+        <section id="aboutHero" class="relative min-h-[72vh] overflow-hidden bg-[#07100D] md:min-h-[76vh]">
+
+            <!-- Background -->
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('/Assets/construction%20full.jpg');">
+            </div>
+
+            <!-- Overlays -->
+            <div
+                class="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,15,13,.97)_0%,rgba(7,15,13,.78)_42%,rgba(7,15,13,.28)_75%,rgba(7,15,13,.08)_100%)]">
+            </div>
+
+            <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(7,15,13,.92)_0%,transparent_58%)]">
+            </div>
+
+            <!-- Glow -->
+            <div class="absolute -right-24 top-24 h-[320px] w-[320px] rounded-full bg-[#D8FF65]/10 blur-[110px]">
+            </div>
+
+            <!-- Container -->
+            <div
+                class="relative z-10 mx-auto flex min-h-[72vh] max-w-[1450px] flex-col justify-end px-5 pb-10 pt-28 md:min-h-[76vh] md:px-10 md:pb-12 md:pt-32 lg:px-14 lg:pb-14">
+
+                <div class="max-w-[980px]">
+
+                    <!-- Label -->
+                    <div class="mb-4 flex items-center gap-3" data-reveal>
+
+                        <span class="h-2 w-2 rounded-full bg-[#D8FF65] shadow-[0_0_16px_#D8FF65]">
+                        </span>
+
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/60">
+                            About Top Range
+                        </span>
+
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 data-reveal
+                        class="max-w-[1000px] text-[44px] font-medium leading-[0.95] tracking-[-0.055em] text-white sm:text-[58px] md:text-[72px] lg:text-[86px]">
+
+                        Building trust.
+
+                        <br>
+
+                        Delivering
+
+                        <span class="text-[#D8FF65]">
+                            quality.
+                        </span>
+
+                    </h1>
+
+                    <!-- Bottom -->
+                    <div data-reveal
+                        class="mt-6 grid gap-5 border-t border-white/15 pt-5 md:grid-cols-[1fr_auto] md:items-end">
+
+                        <p class="max-w-2xl text-[14px] leading-7 text-white/65 md:text-[16px]">
+
+                            Top Range Building Materials provides reliable,
+                            high-quality construction products and supply solutions
+                            for residential, commercial and industrial projects.
+
+                        </p>
+
+                        <a href="#our-story"
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-[#D8FF65] text-[#101411] transition duration-300 hover:scale-110 hover:bg-white">
+
+                            <i data-lucide="arrow-down" class="h-4 w-4">
+                            </i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+        COMPANY INTRODUCTION
+    ========================================================== -->
+        <section id="our-story" class="py-14 md:py-16 lg:py-20">
+
+            <div class="mx-auto max-w-[1450px] px-5 md:px-10 lg:px-14">
+
+                <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-14">
+
+                    <!-- Left -->
+                    <div data-reveal>
+
+                        <div class="flex items-center gap-3">
+
+                            <span class="h-2 w-2 rounded-full bg-[#94BE26]">
+                            </span>
+
+                            <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-black/45">
+                                Who We Are
+                            </span>
+
+                        </div>
+
+                        <p class="mt-5 max-w-md text-sm leading-7 text-black/50">
+
+                            Reliable materials. Trusted brands. Professional
+                            service. Everything you need to move your project
+                            forward.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Right -->
+                    <div data-reveal>
+
+                        <h2
+                            class="text-[34px] font-medium leading-[1.04] tracking-[-0.045em] sm:text-[42px] md:text-[52px] lg:text-[60px]">
+
+                            Your trusted partner for
+
+                            <span class="text-black/35">
+                                building materials and construction solutions.
+                            </span>
+
+                        </h2>
+
+                        <div class="mt-7 grid gap-6 border-t border-black/10 pt-6 md:grid-cols-2">
+
+                            <p class="text-[15px] leading-7 text-black/60">
+
+                                Top Range Building Materials is focused on supplying
+                                quality construction products that meet the needs of
+                                contractors, developers, engineers, designers and
+                                individual customers.
+
+                            </p>
+
+                            <p class="text-[15px] leading-7 text-black/60">
+
+                                From essential structural materials to finishing
+                                products, hardware and specialist solutions, we aim
+                                to simplify sourcing through dependable products,
+                                responsive service and competitive supply.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+        IMAGE + EXPERIENCE
+    ========================================================== -->
+        <section class="pb-14 md:pb-16 lg:pb-20">
+
+            <div class="mx-auto max-w-[1450px] px-5 md:px-10 lg:px-14">
+
+                <div data-reveal class="relative overflow-hidden rounded-[26px] md:rounded-[34px]">
+
+                    <img src="/Assets/construction%20full.jpg" alt="Top Range Building Materials"
+                        class="h-[400px] w-full object-cover sm:h-[480px] md:h-[560px] lg:h-[620px]">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent">
+                    </div>
+
+                    <!-- Card -->
+                    <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-auto md:w-[410px]">
+
+                        <div
+                            class="rounded-[24px] border border-white/15 bg-[#0B1512]/85 p-5 text-white backdrop-blur-xl md:p-7">
+
+                            <span class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D8FF65]">
+                                Built Around Reliability
+                            </span>
+
+                            <h3 class="mt-4 text-2xl font-medium tracking-[-0.03em] md:text-[28px]">
+
+                                Materials that perform from foundation to finish.
+
+                            </h3>
+
+                            <p class="mt-3 text-sm leading-6 text-white/55">
+
+                                We work to deliver dependable products,
+                                knowledgeable support and efficient supply for
+                                projects of every scale.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+        MISSION / VISION
+    ========================================================== -->
+        <section class="pb-14 md:pb-16 lg:pb-20">
+
+            <div class="mx-auto max-w-[1450px] px-5 md:px-10 lg:px-14">
+
+                <!-- Heading -->
+                <div data-reveal class="mb-7">
+
+                    <div class="flex items-center gap-3">
+
+                        <span class="h-2 w-2 rounded-full bg-[#94BE26]">
+                        </span>
+
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-black/40">
+                            Our Direction
+                        </span>
+
+                    </div>
+
+                    <h2
+                        class="mt-4 max-w-3xl text-[36px] font-medium leading-[1] tracking-[-0.045em] md:text-[50px] lg:text-[58px]">
+
+                        Built on strong
+
+                        <span class="text-black/35">
+                            values and long-term relationships.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+                <!-- Cards -->
+                <div data-stagger class="grid gap-3 lg:grid-cols-2">
+
+                    <!-- Mission -->
+                    <article
+                        class="group relative min-h-[400px] overflow-hidden rounded-[26px] bg-[#D8FF65] p-6 md:min-h-[440px] md:p-8">
+
+                        <div class="flex items-start justify-between">
+
+                            <span class="text-xs font-semibold uppercase tracking-[0.18em] text-black/45">
+                                01 / Mission
+                            </span>
+
+                            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white">
+
+                                <i data-lucide="target" class="h-5 w-5">
+                                </i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="absolute bottom-7 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
+
+                            <h3
+                                class="max-w-xl text-[30px] font-medium leading-[1.05] tracking-[-0.04em] md:text-[40px]">
+
+                                To make quality building materials easier to source,
+                                trust and deliver.
+
+                            </h3>
+
+                            <p class="mt-4 max-w-lg text-sm leading-6 text-black/55">
+
+                                We aim to provide customers with dependable
+                                products, responsive service and efficient
+                                solutions across every stage of construction.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Vision -->
+                    <article
+                        class="relative min-h-[400px] overflow-hidden rounded-[26px] bg-[#101411] p-6 text-white md:min-h-[440px] md:p-8">
+
+                        <div
+                            class="absolute right-0 top-0 h-[220px] w-[220px] rounded-full bg-[#D8FF65]/10 blur-[90px]">
+                        </div>
+
+                        <div class="relative flex items-start justify-between">
+
+                            <span class="text-xs font-semibold uppercase tracking-[0.18em] text-white/40">
+                                02 / Vision
+                            </span>
+
+                            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10">
+
+                                <i data-lucide="eye" class="h-5 w-5">
+                                </i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="absolute bottom-7 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
+
+                            <h3
+                                class="max-w-xl text-[30px] font-medium leading-[1.05] tracking-[-0.04em] md:text-[40px]">
+
+                                To become a trusted name in modern construction
+                                supply.
+
+                            </h3>
+
+                            <p class="mt-4 max-w-lg text-sm leading-6 text-white/50">
+
+                                We seek to build long-term partnerships by combining
+                                quality products, trusted manufacturers and strong
+                                customer service.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer id="contact" class="footer-v3 relative overflow-hidden
+    bg-[#080D0A] text-white">
+
+            <!-- background effects -->
+            <div class="footer-v3-grid"></div>
+
+            <div class="footer-v3-light footer-v3-light-1"></div>
+            <div class="footer-v3-light footer-v3-light-2"></div>
+
+
+            <div class="relative z-10 mx-auto
+        max-w-[1450px]
+        px-5
+        pt-20
+        md:px-10 md:pt-24
+        lg:px-14 lg:pt-28">
+
+
+                <!-- =====================================================
+            LARGE INTRO
+        ====================================================== -->
+
+                <div class="grid gap-12
+            border-b border-white/10
+            pb-16
+            lg:grid-cols-[1.2fr_0.8fr]
+            lg:items-end
+            lg:gap-20
+            lg:pb-20">
+
+
+                    <!-- Left -->
+                    <div data-footer-v3>
+
+                        <div class="flex items-center gap-3">
+
+                            <span class="footer-v3-live-dot"></span>
+
+                            <span class="text-[10px]
+                        font-semibold uppercase
+                        tracking-[0.22em]
+                        text-white/35">
+                                Ready for your next project
+                            </span>
+
+                        </div>
+
+
+                        <h2 class="mt-6
+                    max-w-[900px]
+                    font-display
+                    text-[44px]
+                    font-medium
+                    leading-[0.95]
+                    tracking-[-0.06em]
+                    sm:text-[56px]
+                    md:text-[72px]
+                    lg:text-[88px]">
+
+                            Let's build
+
+                            <span class="relative
+                        inline-block
+                        text-[#D8FF65]">
+                                something
+
+                                <svg class="footer-v3-underline
+                            absolute -bottom-3
+                            left-0 h-4 w-full" viewBox="0 0 300 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 13C70 4 185 3 298 9" stroke="#D8FF65" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+
+                            </span>
+
+                            better.
+
+                        </h2>
+
+                    </div>
+
+
+                    <!-- Right -->
+                    <div data-footer-v3 class="lg:flex lg:justify-end">
+
+                        <div class="max-w-md">
+
+                            <p class="text-base
+                        leading-8
+                        text-white/45">
+                                Tell us what materials your project needs.
+                                Our team will help you source reliable products,
+                                quantities and brands for your requirement.
+                            </p>
+
+
+                            <a href="#quote" data-footer-magnetic class="footer-v3-main-button
+                        group mt-8">
+
+                                <span>
+                                    Start a Quote
+                                </span>
+
+                                <span class="footer-v3-main-button-icon">
+
+                                    <i data-lucide="arrow-up-right" class="h-5 w-5"></i>
+
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =====================================================
+            CONTACT / INFO BENTO
+        ====================================================== -->
+
+                <div class="grid gap-4
+            py-12
+            md:grid-cols-2
+            lg:grid-cols-12
+            lg:py-16">
+
+
+                    <!-- Brand -->
+                    <div data-footer-v3 class="footer-v3-box
+                md:col-span-2
+                lg:col-span-5">
+
+                        <div class="flex h-full
+                    flex-col justify-between">
+
+                            <div>
+
+                                <a href="#home" class="inline-flex items-center gap-3">
+
+
+                                    <div class="flex h-16 items-center">
+                                        <img src="/Assets/Logo 1.png" alt="Top Range Logo"
+                                            class="h-14 w-auto object-contain" />
+                                    </div>
+
+                                </a>
+
+
+                                <p class="mt-7 max-w-sm
+                            text-sm
+                            leading-7
+                            text-white/40">
+                                    Quality building materials and reliable
+                                    supply solutions for residential,
+                                    commercial and industrial projects.
+                                </p>
+
+                            </div>
+
+
+                            <div class="mt-12 flex
+                        items-end justify-between
+                        gap-6">
+
+                                <div>
+
+                                    <p class="text-[10px]
+                                uppercase
+                                tracking-[0.18em]
+                                text-white/25">
+                                        Based in
+                                    </p>
+
+                                    <p class="mt-2 text-sm
+                                text-white/65">
+                                        United Arab Emirates
+                                    </p>
+
+                                </div>
+
+
+                                <i data-lucide="map-pin" class="h-5 w-5
+                            text-[#D8FF65]"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+                    <a href="mailto:info@toprange.ae" data-footer-v3 class="footer-v3-box
+                group
+                lg:col-span-4">
+
+                        <div class="flex h-full
+                    flex-col justify-between">
+
+                            <div class="flex items-start
+                        justify-between">
+
+                                <span class="text-[10px]
+                            uppercase
+                            tracking-[0.18em]
+                            text-white/25">
+                                    Email
+                                </span>
+
+
+                                <span class="footer-v3-icon-circle">
+
+                                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="mt-16">
+
+                                <p class="text-[22px]
+                            font-medium
+                            tracking-[-0.03em]
+                            text-white/80
+                            transition
+                            group-hover:text-[#D8FF65]
+                            md:text-[26px]">
+                                    info@toprange.ae
+                                </p>
+
+                                <p class="mt-3
+                            text-sm
+                            text-white/30">
+                                    Send your material requirement
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Phone -->
+                    <a href="tel:+971000000000" data-footer-v3 class="footer-v3-box
+                footer-v3-lime
+                group
+                lg:col-span-3">
+
+                        <div class="flex h-full
+                    flex-col justify-between">
+
+                            <div class="flex items-start
+                        justify-between">
+
+                                <span class="text-[10px]
+                            uppercase
+                            tracking-[0.18em]
+                            text-black/45">
+                                    Call Us
+                                </span>
+
+
+                                <span class="flex h-10 w-10
+                            items-center justify-center
+                            rounded-full
+                            bg-black
+                            text-white">
+
+                                    <i data-lucide="phone" class="h-4 w-4"></i>
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="mt-16">
+
+                                <p class="text-[21px]
+                            font-semibold
+                            tracking-[-0.03em]
+                            text-[#101411]">
+                                    +971 00 000 0000
+                                </p>
+
+                                <p class="mt-3
+                            text-sm
+                            text-black/45">
+                                    Speak with our team
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+
+                <!-- =====================================================
+            ANIMATED HUGE TYPE
+        ====================================================== -->
+
+                <div class="footer-v3-word-wrap
+            border-t border-white/10">
+
+                    <div id="footerV3Word" class="footer-v3-word">
+                        BUILD BETTER
+                    </div>
+
+                </div>
+
+
+
+                <!-- =====================================================
+            BOTTOM
+        ====================================================== -->
+
+                <div class="flex flex-col
+            gap-5
+            border-t border-white/10
+            py-7
+            text-xs
+            text-white/25
+            md:flex-row
+            md:items-center
+            md:justify-between">
+
+                    <p>
+                        © 2026 Top Range Building Materials.
+                        All rights reserved.
+                    </p>
+
+
+                    <p>
+                        Quality · Reliability · Supply
+                    </p>
+
+
+                    <a href="#home" class="group
+                flex items-center gap-2
+                text-white/40
+                transition
+                hover:text-[#D8FF65]">
+
+                        Back to top
+
+                        <i data-lucide="arrow-up" class="h-3.5 w-3.5
+                    transition-transform
+                    group-hover:-translate-y-1"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script>/* =========================================================
+FOOTER V3 GSAP
+========================================================= */
+
+        const footerV3 =
+            document.querySelector(
+                ".footer-v3"
+            );
+
+
+        if (footerV3) {
+
+
+            /* reveal */
+
+            gsap.to(
+                "[data-footer-v3]",
+                {
+
+                    opacity: 1,
+
+                    y: 0,
+
+                    duration: 1,
+
+                    stagger: .09,
+
+                    ease:
+                        "power4.out",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            footerV3,
+
+                        start:
+                            "top 82%",
+
+                        once:
+                            true
+
+                    }
+
+                }
+            );
+
+
+            /* underline drawing */
+
+            gsap.to(
+                ".footer-v3-underline path",
+                {
+
+                    strokeDashoffset:
+                        0,
+
+                    duration:
+                        1.3,
+
+                    ease:
+                        "power3.inOut",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            ".footer-v3-underline",
+
+                        start:
+                            "top 85%",
+
+                        once:
+                            true
+
+                    }
+
+                }
+            );
+
+
+            /* giant word horizontal motion */
+
+            gsap.fromTo(
+                "#footerV3Word",
+
+                {
+                    xPercent:
+                        12
+                },
+
+                {
+                    xPercent:
+                        -8,
+
+                    ease:
+                        "none",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            "#footerV3Word",
+
+                        start:
+                            "top bottom",
+
+                        end:
+                            "bottom top",
+
+                        scrub:
+                            1.2
+
+                    }
+
+                }
+            );
+
+
+            /* background glow */
+
+            gsap.to(
+                ".footer-v3-light-1",
+                {
+
+                    x:
+                        -130,
+
+                    y:
+                        90,
+
+                    ease:
+                        "none",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            footerV3,
+
+                        start:
+                            "top bottom",
+
+                        end:
+                            "bottom top",
+
+                        scrub:
+                            2
+
+                    }
+
+                }
+            );
+
+
+            gsap.to(
+                ".footer-v3-light-2",
+                {
+
+                    x:
+                        100,
+
+                    y:
+                        -60,
+
+                    ease:
+                        "none",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            footerV3,
+
+                        start:
+                            "top bottom",
+
+                        end:
+                            "bottom top",
+
+                        scrub:
+                            2
+
+                    }
+
+                }
+            );
+
+
+            /* bento card reveal */
+
+            gsap.from(
+                ".footer-v3-box",
+                {
+
+                    scale:
+                        .96,
+
+                    y:
+                        35,
+
+                    duration:
+                        1,
+
+                    stagger:
+                        .08,
+
+                    ease:
+                        "power4.out",
+
+                    scrollTrigger: {
+
+                        trigger:
+                            ".footer-v3-box",
+
+                        start:
+                            "top 88%",
+
+                        once:
+                            true
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =========================================================
+           FOOTER MAGNETIC BUTTON
+        ========================================================= */
+
+        if (
+            window.matchMedia(
+                "(pointer: fine)"
+            ).matches
+        ) {
+
+            document
+                .querySelectorAll(
+                    "[data-footer-magnetic]"
+                )
+                .forEach(button => {
+
+                    button.addEventListener(
+                        "mousemove",
+                        event => {
+
+                            const rect =
+                                button
+                                    .getBoundingClientRect();
+
+                            const x =
+                                event.clientX -
+                                rect.left -
+                                rect.width / 2;
+
+                            const y =
+                                event.clientY -
+                                rect.top -
+                                rect.height / 2;
+
+
+                            gsap.to(
+                                button,
+                                {
+
+                                    x:
+                                        x * .1,
+
+                                    y:
+                                        y * .1,
+
+                                    duration:
+                                        .3,
+
+                                    ease:
+                                        "power2.out"
+
+                                }
+                            );
+
+                        }
+                    );
+
+
+                    button.addEventListener(
+                        "mouseleave",
+                        () => {
+
+                            gsap.to(
+                                button,
+                                {
+
+                                    x:
+                                        0,
+
+                                    y:
+                                        0,
+
+                                    duration:
+                                        .6,
+
+                                    ease:
+                                        "elastic.out(1,.4)"
+
+                                }
+                            );
+
+                        }
+                    );
+
+                });
+
+        }</script>
+
+
+    <script src="app.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
